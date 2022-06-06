@@ -1716,6 +1716,7 @@ DeathReturn.MouseButton1Click:Connect(function()
 			
 spawn(function()
 	while task.wait() do
+		if deathreturnactive ~= true then
 		local t = 5; 
 		local hue = tick() % t / t
 		local colorrr = Color3.fromHSV(hue, 1, 1)
