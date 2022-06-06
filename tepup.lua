@@ -152,7 +152,7 @@ function CreateESP(plr)
 		TxtPsychic.ZIndex = 10
 		TxtPsychic.Text = ""
 		TxtPsychic.BackgroundTransparency = 1
-		TxtPsychic.Position = UDim2.new(0, 0, 0, 5)
+		TxtPsychic.Position = UDim2.new(0, 0, 0, -5)
 		TxtPsychic.Size = UDim2.new(1, 0, 10, 0)
 		TxtPsychic.Font = "SourceSansBold"
 		TxtPsychic.TextColor3 = Color3.new(0, 0, 0)
