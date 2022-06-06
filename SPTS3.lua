@@ -1754,7 +1754,7 @@ AnnoyStart.MouseButton1Click:Connect(function()
 		AnnoyStart.Text = "TP Spam Player: ON"
 	else
 		annoyplayeractive = false
-		AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
+		AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		AnnoyStart.Text = "TP Spam Player: OFF"
 	end
 end)
