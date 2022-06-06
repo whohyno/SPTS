@@ -216,7 +216,6 @@ function RemoveESP(plr)
 		ESP:Destroy()
 	end
 end
-
 local MainGUI = Instance.new("ScreenGui")
 local TopFrame = Instance.new("Frame")
 local MainFrame = Instance.new("Frame")
@@ -1693,11 +1692,14 @@ spawn(function()
 end)
 
 -- Return to position on Death --
-
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
+		local t = 10
+		while wait() do
+			local hue = tick() % t / t
+			local color = Color3.fromHSV(hue, 1, 1)
+		DeathReturn.BackgroundColor3 = color
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
 		deathreturnactive = false
