@@ -180,7 +180,6 @@ function UpdateESP(plr)
 		else
 			Find.Frame.Names.TextColor3 = Color3.fromRGB(255, 255, 255)
 		end
-		Find.Frame.Dist.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Health.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Fist.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Body.TextColor3 = Color3.new(1, 1, 1)
@@ -195,7 +194,6 @@ function UpdateESP(plr)
 				local Dist = (Find2.Position - pos).magnitude
 				if Dist > ESPLength then
 					Find.Frame.Names.Visible = false
-					Find.Frame.Dist.Visible = false
 					Find.Frame.Health.Visible = false
 					Find.Frame.Fist.Visible = false
 					Find.Frame.Body.Visible = false
@@ -203,7 +201,6 @@ function UpdateESP(plr)
 					return
 				else
 					Find.Frame.Names.Visible = true
-					Find.Frame.Dist.Visible = true
 					Find.Frame.Health.Visible = true
 					Find.Frame.Fist.Visible = true
 					Find.Frame.Body.Visible = true
@@ -690,7 +687,7 @@ FarmBodyLabel.BorderColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmBodyLabel.Position = UDim2.new(0, 213, 0, 65)
 FarmBodyLabel.Size = UDim2.new(0, 200, 0, 100)
 FarmBodyLabel.Font = Enum.Font.Fantasy
-FarmBodyLabel.Text = "Look at teleports and go to the best place you can go for your Body Toughness. You need 10Mil to go in the volcano but you need at least 50Mil before you can afk in there."
+FarmBodyLabel.Text = "Look at teleports and go to the best place you can go for your Body Toughness. You need 10Mil to go in the vooano but you need at least 50Mil before you can afk in there."
 FarmBodyLabel.TextSize = 16
 FarmBodyLabel.TextWrapped = true
 FarmBodyLabel.Visible = false
@@ -1713,12 +1710,14 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		DeathReturn.BackgroundColor3 = Color3.fromHSV(tick()%5/5,1,1)
+		DeathReturn.BackgroundColor3 = Color3.new(0, 0.5, 0)
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
 		deathreturnactive = false
 		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		DeathReturn.Text = "OnDeath Return: OFF"
+	while true do
+		DeathReturn.BackGroundColor3 = Color3.fromHSV(tick()%5/5,1,1)
 	end
 end)
 
