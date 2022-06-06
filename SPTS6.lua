@@ -171,7 +171,6 @@ function UpdateESP(plr)
 		Find.Frame.Dist.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Health.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Fist.TextColor3 = Color3.new(1, 1, 1)
-		Find.Frame.Body.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Psychic.TextColor3 = Color3.new(1, 1, 1)
 		local GetChar = plr.Character
 		if MyChar and GetChar then
@@ -186,7 +185,6 @@ function UpdateESP(plr)
 					Find.Frame.Dist.Visible = false
 					Find.Frame.Health.Visible = false
 					Find.Frame.Fist.Visible = false
-					Find.Frame.Body.Visible = false
 					Find.Frame.Psychic.Visible = false
 					return
 				else
@@ -194,7 +192,6 @@ function UpdateESP(plr)
 					Find.Frame.Dist.Visible = true
 					Find.Frame.Health.Visible = true
 					Find.Frame.Fist.Visible = true
-					Find.Frame.Body.Visible
 					Find.Frame.Psychic.Visible = true
 				end
 				Find.Frame.Dist.Text = "Distance: " .. string.format("%.0f", Dist)
@@ -202,12 +199,10 @@ function UpdateESP(plr)
 				if Find4 then
 					Find.Frame.Health.Text = "Health: " ..converttoletter(string.format("%.0f", Find4.Health))
 					Find.Frame.Fist.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.FistStrength.Value))
-					Find.Frame.Body.Text = "Body: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.BodyToughness.Value))
 					Find.Frame.Psychic.Text = "Psychic: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.PsychicPower.Value))
 				else
 					Find.Frame.Health.Text = ""
 					Find.Frame.Fist.Text = ""
-					Find.Frame.Body.Text = ""
 					Find.Frame.Psychic.Text = ""
 				end
 			end
