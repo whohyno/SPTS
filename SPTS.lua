@@ -1142,7 +1142,7 @@ InfoText1.Position = UDim2.new(0, 405, 0, 32)
 InfoText1.Size = UDim2.new(0, 190, 0, 180)
 InfoText1.TextColor3 = Color3.new(1, 1, 1)
 InfoText1.Font = Enum.Font.Fantasy
-InfoText1.Text = "This Gui was created by LuckyMMB@V3rmillion.net\nDiscord https://discord.gg/GKzJnUC\n\nCredits:\n-racist dolphin for the original ESP script which I edited and customised and whoever found the remotes for farming exp."
+InfoText1.Text = "GUI created by franq1337#0980"
 InfoText1.TextSize = 15
 InfoText1.TextWrapped = true
 InfoText1.Visible = false
@@ -1156,7 +1156,7 @@ PlayerName.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 PlayerName.Position = UDim2.new(0, 605, 0, 5)
 PlayerName.Size = UDim2.new(0, 150, 0, 20)
 PlayerName.Font = Enum.Font.Fantasy
-PlayerName.TextColor3 = Color3.new(1, 1, 1)
+PlayerName 3 = Color3.new(1, 1, 1)
 PlayerName.Text = tostring(MyPlr.Name)
 PlayerName.TextSize = 15
 PlayerName.TextScaled = true
@@ -1754,7 +1754,7 @@ AnnoyStart.MouseButton1Click:Connect(function()
 		AnnoyStart.Text = "TP Spam Player: ON"
 	else
 		annoyplayeractive = false
-		AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
 		AnnoyStart.Text = "TP Spam Player: OFF"
 	end
 end)
