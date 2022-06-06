@@ -194,6 +194,7 @@ function UpdateESP(plr)
 				local Dist = (Find2.Position - pos).magnitude
 				if Dist > ESPLength then
 					Find.Frame.Names.Visible = false
+					Find.Frame.Dist.Visible = false
 					Find.Frame.Health.Visible = false
 					Find.Frame.Fist.Visible = false
 					Find.Frame.Body.Visible = false
@@ -201,12 +202,14 @@ function UpdateESP(plr)
 					return
 				else
 					Find.Frame.Names.Visible = true
+					Find.Frame.Dist.Visible = true
 					Find.Frame.Health.Visible = true
 					Find.Frame.Fist.Visible = true
 					Find.Frame.Body.Visible = true
 					Find.Frame.Psychic.Visible = true
 				end
-				
+				Find.Frame.Dist.Text = "Distance: " .. string.format("%.0f", Dist)
+				--Find.Frame.Pos.Text = "(X: " .. string.format("%.0f", pos.X) .. ", Y: " .. string.format("%.0f", pos.Y) .. ", Z: " .. string.format("%.0f", pos.Z) .. ")"
 				if Find4 then
 					Find.Frame.Health.Text = "Health: " ..converttoletter(string.format("%.0f", Find4.Health))
 					Find.Frame.Fist.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.FistStrength.Value))
