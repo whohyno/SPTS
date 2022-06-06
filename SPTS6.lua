@@ -154,23 +154,24 @@ function UpdateESP(plr)
 	if Find then
 		local plrStatus = game.Players[plr.Name].leaderstats.Status
 		if plrStatus.Value == "Criminal" then
-			Find.Frame.Names.TextColor3 = Color3.new(1, 0.1, 1)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(252, 101, 98)
 		elseif plrStatus.Value == "Lawbreaker" then
-			Find.Frame.Names.TextColor3 = Color3.new(1, 0.1, 0.1)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(205, 121, 37)
 		elseif plrStatus.Value == "Guardian" then
-			Find.Frame.Names.TextColor3 = Color3.new(0.1, 0.8, 1)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(128, 218, 152)
 		elseif plrStatus.Value == "Protector" then
-			Find.Frame.Names.TextColor3 = Color3.new(0.1, 0.1, 1)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(235, 239, 146)
 		elseif plrStatus.Value == "Supervillain" then
-			Find.Frame.Names.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(204, 39, 5)
 		elseif plrStatus.Value == "Superhero" then
-			Find.Frame.Names.TextColor3 = Color3.new(0.8, 0.8, 0)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(68, 159, 252)
 		else
-			Find.Frame.Names.TextColor3 = Color3.new(1, 1, 1)
+			Find.Frame.Names.TextColor3 = Color3.fromRGB(255, 255, 255)
 		end
 		Find.Frame.Dist.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Health.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Fist.TextColor3 = Color3.new(1, 1, 1)
+		Find.Frame.Body.TextColor3 = Color3.new(1, 1, 1)
 		Find.Frame.Psychic.TextColor3 = Color3.new(1, 1, 1)
 		local GetChar = plr.Character
 		if MyChar and GetChar then
@@ -185,6 +186,7 @@ function UpdateESP(plr)
 					Find.Frame.Dist.Visible = false
 					Find.Frame.Health.Visible = false
 					Find.Frame.Fist.Visible = false
+					Find.Frame.Body.Visible = false
 					Find.Frame.Psychic.Visible = false
 					return
 				else
@@ -192,6 +194,7 @@ function UpdateESP(plr)
 					Find.Frame.Dist.Visible = true
 					Find.Frame.Health.Visible = true
 					Find.Frame.Fist.Visible = true
+					Find.Frame.Body.Visible
 					Find.Frame.Psychic.Visible = true
 				end
 				Find.Frame.Dist.Text = "Distance: " .. string.format("%.0f", Dist)
@@ -199,10 +202,12 @@ function UpdateESP(plr)
 				if Find4 then
 					Find.Frame.Health.Text = "Health: " ..converttoletter(string.format("%.0f", Find4.Health))
 					Find.Frame.Fist.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.FistStrength.Value))
+					Find.Frame.Body.Text = "Body: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.BodyToughness.Value))
 					Find.Frame.Psychic.Text = "Psychic: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.PsychicPower.Value))
 				else
 					Find.Frame.Health.Text = ""
 					Find.Frame.Fist.Text = ""
+					Find.Frame.Body.Text = ""
 					Find.Frame.Psychic.Text = ""
 				end
 			end
@@ -1922,19 +1927,19 @@ spawn(function()
 			StatBestBodyText1.Text = "Body: " ..tostring(PlayerBodyName)
 			local bodyplrStatus = game.Players[PlayerBodyName].leaderstats.Status
 			if bodyplrStatus.Value == "Criminal" then
-				StatBestBodyText1.TextColor3 = Color3.new(1, 0.1, 1)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(252, 101, 98)
 			elseif bodyplrStatus.Value == "Lawbreaker" then
-				StatBestBodyText1.TextColor3 = Color3.new(1, 0.1, 0.1)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(205, 121, 37)
 			elseif bodyplrStatus.Value == "Guardian" then
-				StatBestBodyText1.TextColor3 = Color3.new(0.1, 0.8, 1)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(128, 218, 152)
 			elseif bodyplrStatus.Value == "Protector" then
-				StatBestBodyText1.TextColor3 = Color3.new(0.1, 0.1, 1)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(235, 239, 146)
 			elseif bodyplrStatus.Value == "Supervillain" then
-				StatBestBodyText1.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(204, 39, 5)
 			elseif bodyplrStatus.Value == "Superhero" then
-				StatBestBodyText1.TextColor3 = Color3.new(0.8, 0.8, 0)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(68, 159, 252)
 			else
-				StatBestBodyText1.TextColor3 = Color3.new(1, 1, 1)
+				StatBestBodyText1.TextColor3 = Color3.fromRGB(255, 255, 255)
 			end
 			local FindHum = game.Players[PlayerBodyName].Character.Humanoid
 			local BodyPlayerHealth = converttoletter(string.format("%.0f", FindHum.Health))
