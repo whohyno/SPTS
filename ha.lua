@@ -206,8 +206,7 @@ function UpdateESP(plr)
 					Find.Frame.Body.Visible = true
 					Find.Frame.Psychic.Visible = true
 				end
-				Find.Frame.Dist.Text = "Distance: " .. string.format("%.0f", Dist)
-				--Find.Frame.Pos.Text = "(X: " .. string.format("%.0f", pos.X) .. ", Y: " .. string.format("%.0f", pos.Y) .. ", Z: " .. string.format("%.0f", pos.Z) .. ")"
+				
 				if Find4 then
 					Find.Frame.Health.Text = "Health: " ..converttoletter(string.format("%.0f", Find4.Health))
 					Find.Frame.Fist.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.FistStrength.Value))
@@ -687,7 +686,7 @@ FarmBodyLabel.BorderColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmBodyLabel.Position = UDim2.new(0, 213, 0, 65)
 FarmBodyLabel.Size = UDim2.new(0, 200, 0, 100)
 FarmBodyLabel.Font = Enum.Font.Fantasy
-FarmBodyLabel.Text = "Look at teleports and go to the best place you can go for your Body Toughness. You need 10Mil to go in the vooano but you need at least 50Mil before you can afk in there."
+FarmBodyLabel.Text = "Look at teleports and go to the best place you can go for your Body Toughness. "
 FarmBodyLabel.TextSize = 16
 FarmBodyLabel.TextWrapped = true
 FarmBodyLabel.Visible = false
