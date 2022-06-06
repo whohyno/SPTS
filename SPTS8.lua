@@ -1696,8 +1696,6 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		while true do(
-		DeathReturn.BackgroundColor3 = Color3.fromHSV(tick()%10/10,1,1))
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
 		deathreturnactive = false
@@ -1708,6 +1706,7 @@ end)
 
 spawn(function()
 	while true do
+		DeathReturn.BackgroundColor3 = Color3.fromHSV(tick()%10/10,1,1))
 		if deathreturnactive then
 			player = game:GetService("Players").LocalPlayer
 			player.Character.Humanoid.Died:connect(function()
