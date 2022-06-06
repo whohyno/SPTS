@@ -214,7 +214,7 @@ function UpdateESP(plr)
 				if Find4 then
 					Find.Frame.Health.Text = "Health: " ..converttoletter(string.format("%.0f", Find4.Health))
 					Find.Frame.Fist.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.FistStrength.Value))
-					Find.Frame.Body.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.BodyToughness.Value))
+					Find.Frame.Body.Text = "Body: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.BodyToughness.Value))
 					Find.Frame.Psychic.Text = "Psychic: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.PsychicPower.Value))
 				else
 					Find.Frame.Health.Text = ""
@@ -1897,19 +1897,19 @@ spawn(function()
 			StatBestFistText1.Text = "Fist: " ..tostring(PlayerFistName)
 			local fistplrStatus = game.Players[PlayerFistName].leaderstats.Status
 			if fistplrStatus.Value == "Criminal" then
-				StatBestFistText1.TextColor3 = Color3.new(1, 0.1, 1)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(252, 101, 98)
 			elseif fistplrStatus.Value == "Lawbreaker" then
-				StatBestFistText1.TextColor3 = Color3.new(1, 0.1, 0.1)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(205, 121, 37)
 			elseif fistplrStatus.Value == "Guardian" then
-				StatBestFistText1.TextColor3 = Color3.new(0.1, 0.8, 1)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(128, 218, 152)
 			elseif fistplrStatus.Value == "Protector" then
-				StatBestFistText1.TextColor3 = Color3.new(0.1, 0.1, 1)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(235, 239, 146)
 			elseif fistplrStatus.Value == "Supervillain" then
-				StatBestFistText1.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(204, 39, 5)
 			elseif fistplrStatus.Value == "Superhero" then
-				StatBestFistText1.TextColor3 = Color3.new(0.8, 0.8, 0)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(68, 159, 252)
 			else
-				StatBestFistText1.TextColor3 = Color3.new(1, 1, 1)
+				StatBestFistText1.TextColor3 = Color3.fromRGB(255, 255, 255)
 			end
 			local FindHum = game.Players[PlayerFistName].Character.Humanoid
 			local FistPlayerHealth = converttoletter(string.format("%.0f", FindHum.Health))
@@ -1981,19 +1981,19 @@ spawn(function()
 			StatBestSpeedText1.Text = "Speed: " ..tostring(PlayerSpeedName)
 			local speedplrStatus = game.Players[PlayerSpeedName].leaderstats.Status
 			if speedplrStatus.Value == "Criminal" then
-				StatBestSpeedText1.TextColor3 = Color3.new(1, 0.1, 1)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(252, 101, 98)
 			elseif speedplrStatus.Value == "Lawbreaker" then
-				StatBestSpeedText1.TextColor3 = Color3.new(1, 0.1, 0.1)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(205, 121, 37)
 			elseif speedplrStatus.Value == "Guardian" then
-				StatBestSpeedText1.TextColor3 = Color3.new(0.1, 0.8, 1)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(128, 218, 152)
 			elseif speedplrStatus.Value == "Protector" then
-				StatBestSpeedText1.TextColor3 = Color3.new(0.1, 0.1, 1)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(235, 239, 146)
 			elseif speedplrStatus.Value == "Supervillain" then
-				StatBestSpeedText1.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(204, 39, 5)
 			elseif speedplrStatus.Value == "Superhero" then
-				StatBestSpeedText1.TextColor3 = Color3.new(0.8, 0.8, 0)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(68, 159, 252)
 			else
-				StatBestSpeedText1.TextColor3 = Color3.new(1, 1, 1)
+				StatBestSpeedText1.TextColor3 = Color3.fromRGB(255, 255, 255)
 			end
 			local FindHum = game.Players[PlayerSpeedName].Character.Humanoid
 			local SpeedPlayerHealth = converttoletter(string.format("%.0f", FindHum.Health))
@@ -2023,19 +2023,19 @@ spawn(function()
 			StatBestJumpText1.Text = "Jump: " ..tostring(PlayerJumpName)
 			local JumpplrStatus = game.Players[PlayerJumpName].leaderstats.Status
 			if JumpplrStatus.Value == "Criminal" then
-				StatBestJumpText1.TextColor3 = Color3.new(1, 0.1, 1)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(252, 101, 98)
 			elseif JumpplrStatus.Value == "Lawbreaker" then
-				StatBestJumpText1.TextColor3 = Color3.new(1, 0.1, 0.1)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(205, 121, 37)
 			elseif JumpplrStatus.Value == "Guardian" then
-				StatBestJumpText1.TextColor3 = Color3.new(0.1, 0.8, 1)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(128, 218, 152)
 			elseif JumpplrStatus.Value == "Protector" then
-				StatBestJumpText1.TextColor3 = Color3.new(0.1, 0.1, 1)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(235, 239, 146)
 			elseif JumpplrStatus.Value == "Supervillain" then
-				StatBestJumpText1.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(204, 39, 5)
 			elseif JumpplrStatus.Value == "Superhero" then
-				StatBestJumpText1.TextColor3 = Color3.new(0.8, 0.8, 0)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(68, 159, 252)
 			else
-				StatBestJumpText1.TextColor3 = Color3.new(1, 1, 1)
+				StatBestJumpText1.TextColor3 = Color3.fromRGB(255, 255, 255)
 			end
 			local FindHum = game.Players[PlayerJumpName].Character.Humanoid
 			local JumpPlayerHealth = converttoletter(string.format("%.0f", FindHum.Health))
@@ -2065,19 +2065,19 @@ spawn(function()
 			StatBestPsychicText1.Text = "Psy: " ..tostring(PlayerPsychicName)
 			local PsychicplrStatus = game.Players[PlayerPsychicName].leaderstats.Status
 			if PsychicplrStatus.Value == "Criminal" then
-				StatBestPsychicText1.TextColor3 = Color3.new(1, 0.1, 1)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(252, 101, 98)
 			elseif PsychicplrStatus.Value == "Lawbreaker" then
-				StatBestPsychicText1.TextColor3 = Color3.new(1, 0.1, 0.1)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(205, 121, 37)
 			elseif PsychicplrStatus.Value == "Guardian" then
-				StatBestPsychicText1.TextColor3 = Color3.new(0.1, 0.8, 1)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(128, 218, 152)
 			elseif PsychicplrStatus.Value == "Protector" then
-				StatBestPsychicText1.TextColor3 = Color3.new(0.1, 0.1, 1)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(235, 239, 146)
 			elseif PsychicplrStatus.Value == "Supervillain" then
-				StatBestPsychicText1.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(204, 39, 5)
 			elseif PsychicplrStatus.Value == "Superhero" then
-				StatBestPsychicText1.TextColor3 = Color3.new(0.8, 0.8, 0)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(68, 159, 252)
 			else
-				StatBestPsychicText1.TextColor3 = Color3.new(1, 1, 1)
+				StatBestPsychicText1.TextColor3 = Color3.fromRGB(255, 255, 255)
 			end
 			local FindHum = game.Players[PlayerPsychicName].Character.Humanoid
 			local PsychicPlayerHealth = converttoletter(string.format("%.0f", FindHum.Health))
