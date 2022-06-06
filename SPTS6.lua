@@ -1694,6 +1694,7 @@ end)
 
 -- Return to position on Death --
 DeathReturn.MouseButton1Click:Connect(function()
+	while true do
 	if deathreturnactive ~= true then
 		deathreturnactive = true
 		DeathReturn.BackgroundColor3 = Color3.fromHSV(tick()%5/5,1,1)
