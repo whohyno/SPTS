@@ -1139,7 +1139,7 @@ InfoText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 InfoText1.BorderColor3 = Color3.new(0, 0, 0)
 InfoText1.BackgroundTransparency = 0
 InfoText1.Position = UDim2.new(0, 405, 0, 32)
-InfoText1.Size = UDim2.new(0, 190, 0, 35)
+InfoText1.Size = UDim2.new(0, 141, 0, 18)
 InfoText1.TextColor3 = Color3.new(1, 1, 1)
 InfoText1.Font = Enum.Font.Fantasy
 InfoText1.Text = "GUI = franq1337#0980"
