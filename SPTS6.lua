@@ -319,11 +319,7 @@ local ShowStats2 = Instance.new("TextLabel")
 local StatNameSet = Instance.new("TextButton")
 local NoClip = Instance.new("TextButton")
 local GodMode = Instance.new("TextButton")
-local color = {
-	while true do
-	Script.Parent.Color = Color3.fromHSV(tick()%5/5,1,1)
-	end
-	}
+
 -- Properties
 
 MainGUI.Name = "MainGUI"
@@ -1700,7 +1696,7 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		DeathReturn.BackgroundColor3 = color
+		DeathReturn.BackgroundColor3 = Color3.fromHSV(tick()%5/5,1,1)
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
 		deathreturnactive = false
