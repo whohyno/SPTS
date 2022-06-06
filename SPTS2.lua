@@ -1697,7 +1697,7 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		DeathReturn.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
 		deathreturnactive = false
