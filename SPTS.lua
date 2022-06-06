@@ -401,7 +401,7 @@ WayPointsFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 WayPointsFrame.BorderColor3 = Color3.new(0, 0, 0)
 WayPointsFrame.BackgroundTransparency = 0.2
 WayPointsFrame.Position = UDim2.new(0, 1, 0, 33)
-WayPointsFrame.Size = UDim2.new(0, 375, 0, 480)
+WayPointsFrame.Size = UDim2.new(0, 375, 0, 280)
 WayPointsFrame.Visible = false
 
 FarmExp.Name = "FarmExp"
