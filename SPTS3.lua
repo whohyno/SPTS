@@ -216,6 +216,7 @@ function RemoveESP(plr)
 		ESP:Destroy()
 	end
 end
+
 local MainGUI = Instance.new("ScreenGui")
 local TopFrame = Instance.new("Frame")
 local MainFrame = Instance.new("Frame")
@@ -225,6 +226,9 @@ local Minimize = Instance.new("TextButton")
 local cf = Instance.new("Frame")
 local c1 = Instance.new("TextLabel")
 local c = Instance.new("TextButton")
+local t = 10
+local hue = tick() % t / t
+local color = Color3.fromHSV(hue, 1, 1)
 local DeathReturn = Instance.new("TextButton")
 local PunchMode = Instance.new("TextButton")
 local WayPoints = Instance.new("TextButton")
@@ -1695,10 +1699,6 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		local t = 10
-		while wait() do
-			local hue = tick() % t / t
-			local color = Color3.fromHSV(hue, 1, 1)
 		DeathReturn.BackgroundColor3 = color
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
