@@ -227,8 +227,6 @@ local cf = Instance.new("Frame")
 local c1 = Instance.new("TextLabel")
 local c = Instance.new("TextButton")
 local t = 10
-local hue = tick() % t / t
-local color = Color3.fromHSV(hue, 1, 1)
 local DeathReturn = Instance.new("TextButton")
 local PunchMode = Instance.new("TextButton")
 local WayPoints = Instance.new("TextButton")
@@ -1699,8 +1697,12 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		DeathReturn.BackgroundColor3 = color
 		DeathReturn.Text = "OnDeath Return: ON"
+		wait(10)
+		while wait() do
+			local hue = tick() % t / t
+			local color = Color3.fromHSV(hue, 1, 1)
+			DeathReturn.BackgroundColor3 = color
 	else
 		deathreturnactive = false
 		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
