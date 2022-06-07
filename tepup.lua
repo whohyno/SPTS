@@ -341,8 +341,8 @@ local MainCORE = game.CoreGui["MainGUI"]
 
 TopFrame.Name = "TopFrame"
 TopFrame.Parent = MainGUI
-TopFrame.BackgroundColor3 = Color3.new(0, 0, 0)
-TopFrame.BorderColor3 = Color3.new(0, 0, 0)
+TopFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+TopFrame.BorderColor3 = Color3.new(1, 1, 1)
 TopFrame.BackgroundTransparency = 1
 TopFrame.Position = UDim2.new(0.5, -30, 0, -27)
 TopFrame.Size = UDim2.new(0, 80, 0, 20)
@@ -351,11 +351,11 @@ TopFrame.Visible = false
 Open.Name = "Open"
 Open.Parent = TopFrame
 Open.BackgroundColor3 = Color3.new(1, 1, 1)
-Open.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+Open.BorderColor3 = Color3.new(0, 0, 0)
 Open.Size = UDim2.new(0, 60, 0, 20)
 Open.Font = Enum.Font.Fantasy
 Open.Text = "Open"
-Open.TextColor3 = Color3.new(1, 1, 1)
+Open.TextColor3 = Color3.new(0, 0, 0)
 Open.TextSize = 18
 Open.Selectable = true
 Open.TextWrapped = true
@@ -372,19 +372,19 @@ if not cf.Visible then MainGUI:Destroy() else MainFrame.Visible = true end
 Close.Name = "Close"
 Close.Parent = MainFrame
 Close.BackgroundColor3 = Color3.new(1, 1, 1)
-Close.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+Close.BorderColor3 = Color3.new(0, 0, 0)
 Close.Position = UDim2.new(0, 10, 0, 5)
 Close.Size = UDim2.new(0, 20, 0, 20)
 Close.Font = Enum.Font.Fantasy
 Close.Text = "X"
-Close.TextColor3 = Color3.new(1, 0, 0)
+Close.TextColor3 = Color3.new(0, 0, 0)
 Close.TextSize = 17
 Close.TextScaled = true
 Close.TextWrapped = true
 
 Minimize.Name = "Minimize"
 Minimize.Parent = MainFrame
-Minimize.BackgroundColor3 = Color3.new(1, 1, 1)
+Minimize.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 Minimize.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 Minimize.Position = UDim2.new(0, 35, 0, 5)
 Minimize.Size = UDim2.new(0, 20, 0, 20)
@@ -397,7 +397,7 @@ Minimize.TextWrapped = true
 
 WayPoints.Name = "WayPoints"
 WayPoints.Parent = MainFrame
-WayPoints.BackgroundColor3 = Color3.new(1, 1, 1)
+WayPoints.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 WayPoints.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 WayPoints.Position = UDim2.new(0, 60, 0, 5)
 WayPoints.Size = UDim2.new(0, 65, 0, 20)
@@ -409,7 +409,7 @@ WayPoints.TextWrapped = true
 
 WayPointsFrame.Name = "WayPointsFrame"
 WayPointsFrame.Parent = MainFrame
-WayPointsFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+WayPointsFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 WayPointsFrame.BorderColor3 = Color3.new(0, 0, 0)
 WayPointsFrame.BackgroundTransparency = 0.2
 WayPointsFrame.Position = UDim2.new(0, 1, 0, 33)
@@ -418,7 +418,7 @@ WayPointsFrame.Visible = false
 
 FarmExp.Name = "FarmExp"
 FarmExp.Parent = MainFrame
-FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmExp.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmExp.Position = UDim2.new(0, 130, 0, 5)
 FarmExp.Size = UDim2.new(0, 75, 0, 20)
@@ -430,7 +430,7 @@ FarmExp.TextWrapped = true
 
 FarmExpFrame.Name = "FarmExpFrame"
 FarmExpFrame.Parent = MainFrame
-FarmExpFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmExpFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmExpFrame.BorderColor3 = Color3.new(0, 0, 0)
 FarmExpFrame.BackgroundTransparency = 0.2
 FarmExpFrame.Position = UDim2.new(0, 62.5, 0, 33)
@@ -439,7 +439,7 @@ FarmExpFrame.Visible = false
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
-ShowLocation.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowLocation.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowLocation.TextColor3 = Color3.new(1, 1, 1)
 ShowLocation.BorderColor3 = Color3.new(0, 0, 0)
 ShowLocation.Position = UDim2.new(0, 5, 0, 5)
@@ -451,7 +451,7 @@ ShowLocation.TextSize = 15
 
 SetLocation.Name = "SetLocation"
 SetLocation.Parent = WayPointsFrame
-SetLocation.BackgroundColor3 = Color3.new(1, 1, 1)
+SetLocation.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 SetLocation.TextColor3 = Color3.new(1, 1, 1)
 SetLocation.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 SetLocation.Position = UDim2.new(0, 180, 0, 5)
@@ -463,7 +463,7 @@ SetLocation.TextSize = 16
 
 TPLocation.Name = "TPLocation"
 TPLocation.Parent = WayPointsFrame
-TPLocation.BackgroundColor3 = Color3.new(1, 1, 1)
+TPLocation.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 TPLocation.TextColor3 = Color3.new(1, 1, 1)
 TPLocation.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 TPLocation.Position = UDim2.new(0, 305, 0, 5)
@@ -607,7 +607,7 @@ LocationPP1Qa.TextSize = 16
 
 FarmAll.Name = "FarmAll"
 FarmAll.Parent = FarmExpFrame
-FarmAll.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmAll.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmAll.TextColor3 = Color3.new(1, 1, 1)
 FarmAll.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmAll.Position = UDim2.new(0, 5, 0, 5)
@@ -619,7 +619,7 @@ FarmAll.TextSize = 16
 
 FarmFist.Name = "FarmFist"
 FarmFist.Parent = FarmExpFrame
-FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmFist.TextColor3 = Color3.new(1, 1, 1)
 FarmFist.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmFist.Position = UDim2.new(0, 5, 0, 40)
@@ -631,7 +631,7 @@ FarmFist.TextSize = 16
 
 FarmBody.Name = "FarmBody"
 FarmBody.Parent = FarmExpFrame
-FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmBody.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmBody.TextColor3 = Color3.new(1, 1, 1)
 FarmBody.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmBody.Position = UDim2.new(0, 5, 0, 65)
@@ -643,7 +643,7 @@ FarmBody.TextSize = 16
 
 FarmSpeed.Name = "FarmSpeed"
 FarmSpeed.Parent = FarmExpFrame
-FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmSpeed.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmSpeed.TextColor3 = Color3.new(1, 1, 1)
 FarmSpeed.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmSpeed.Position = UDim2.new(0, 5, 0, 90)
@@ -655,7 +655,7 @@ FarmSpeed.TextSize = 16
 
 FarmJump.Name = "FarmJump"
 FarmJump.Parent = FarmExpFrame
-FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmJump.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmJump.TextColor3 = Color3.new(1, 1, 1)
 FarmJump.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmJump.Position = UDim2.new(0, 5, 0, 115)
@@ -667,7 +667,7 @@ FarmJump.TextSize = 16
 
 FarmPsychic.Name = "FarmPsychic"
 FarmPsychic.Parent = FarmExpFrame
-FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmPsychic.TextColor3 = Color3.new(1, 1, 1)
 FarmPsychic.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 FarmPsychic.Position = UDim2.new(0, 5, 0, 140)
@@ -679,9 +679,9 @@ FarmPsychic.TextSize = 16
 
 FarmBodyLabel.Name = "FarmBodyLabel"
 FarmBodyLabel.Parent = FarmExpFrame
-FarmBodyLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmBodyLabel.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmBodyLabel.TextColor3 = Color3.new(1, 1, 1)
-FarmBodyLabel.BorderColor3 = Color3.new(1, 1, 1)
+FarmBodyLabel.BorderColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmBodyLabel.Position = UDim2.new(0, 213, 0, 65)
 FarmBodyLabel.Size = UDim2.new(0, 200, 0, 100)
 FarmBodyLabel.Font = Enum.Font.Fantasy
@@ -692,9 +692,9 @@ FarmBodyLabel.Visible = false
 
 FarmSpeedLabel.Name = "FarmSpeedLabel"
 FarmSpeedLabel.Parent = FarmExpFrame
-FarmSpeedLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmSpeedLabel.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmSpeedLabel.TextColor3 = Color3.new(1, 1, 1)
-FarmSpeedLabel.BorderColor3 = Color3.new(1, 1, 1)
+FarmSpeedLabel.BorderColor3 = Color3.new(0.1, 0.1, 0.1)
 FarmSpeedLabel.Position = UDim2.new(0, 213, 0, 65)
 FarmSpeedLabel.Size = UDim2.new(0, 200, 0, 100)
 FarmSpeedLabel.Font = Enum.Font.Fantasy
@@ -705,7 +705,7 @@ FarmSpeedLabel.Visible = false
 
 DeathReturn.Name = "DeathReturn"
 DeathReturn.Parent = MainFrame
-DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
+DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 DeathReturn.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 DeathReturn.Position = UDim2.new(0, 210, 0, 5)
 DeathReturn.Size = UDim2.new(0, 160, 0, 20)
@@ -717,7 +717,7 @@ DeathReturn.TextWrapped = true
 
 esptrack.Name = "esptrack"
 esptrack.Parent = MainFrame
-esptrack.BackgroundColor3 = Color3.new(1, 1, 1)
+esptrack.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 esptrack.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 esptrack.Position = UDim2.new(0, 375, 0, 5)
 esptrack.Size = UDim2.new(0, 35, 0, 20)
@@ -729,7 +729,7 @@ esptrack.TextWrapped = true
 
 PlayerInfo.Name = "PlayerInfo"
 PlayerInfo.Parent = MainFrame
-PlayerInfo.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerInfo.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 PlayerInfo.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 PlayerInfo.Position = UDim2.new(0, 415, 0, 5)
 PlayerInfo.Size = UDim2.new(0, 85, 0, 20)
@@ -741,7 +741,7 @@ PlayerInfo.TextWrapped = true
 
 PlayerInfoFrame.Name = "PlayerInfoFrame"
 PlayerInfoFrame.Parent = MainFrame
-PlayerInfoFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerInfoFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 PlayerInfoFrame.BorderColor3 = Color3.new(0, 0, 0)
 PlayerInfoFrame.BackgroundTransparency = 0.2
 PlayerInfoFrame.Position = UDim2.new(0, 377.5, 0, 33)
@@ -750,7 +750,7 @@ PlayerInfoFrame.Visible = false
 
 ShowTopPlayers.Name = "ShowTopPlayers"
 ShowTopPlayers.Parent = PlayerInfoFrame
-ShowTopPlayers.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowTopPlayers.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowTopPlayers.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 ShowTopPlayers.Position = UDim2.new(0, 5, 0, 5)
 ShowTopPlayers.Size = UDim2.new(0, 150, 0, 20)
@@ -775,7 +775,7 @@ PlayerInfoStatsFrame.Visible = false
 
 PlayerInfoStatsClose.Name = "PlayerInfoStatsClose"
 PlayerInfoStatsClose.Parent = PlayerInfoStatsFrame
-PlayerInfoStatsClose.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerInfoStatsClose.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 PlayerInfoStatsClose.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 PlayerInfoStatsClose.Position = UDim2.new(0, 5, 0, 5)
 PlayerInfoStatsClose.Size = UDim2.new(0, 20, 0, 20)
@@ -789,7 +789,7 @@ PlayerInfoStatsClose.TextWrapped = true
 
 StatBestFistText1.Name = "StatBestFistText1"
 StatBestFistText1.Parent = PlayerInfoStatsFrame
-StatBestFistText1.BackgroundColor3 = Color3.new(1, 1, 1)
+StatBestFistText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 StatBestFistText1.BackgroundTransparency = 1
 StatBestFistText1.Position = UDim2.new(0, 30, 0, 2)
 StatBestFistText1.Size = UDim2.new(0, 160, 0, 20)
@@ -801,7 +801,7 @@ StatBestFistText1.TextSize = 13
 
 ShowStatsFist1.Name = "ShowStatsFist1"
 ShowStatsFist1.Parent = PlayerInfoStatsFrame
-ShowStatsFist1.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsFist1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsFist1.BackgroundTransparency = 1
 ShowStatsFist1.Position = UDim2.new(0, 30, 0, 22)
 ShowStatsFist1.Size = UDim2.new(0, 50, 0, 90)
@@ -814,7 +814,7 @@ ShowStatsFist1.TextXAlignment = Enum.TextXAlignment.Right
 
 ShowStatsFist2.Name = "ShowStatsFist2"
 ShowStatsFist2.Parent = PlayerInfoStatsFrame
-ShowStatsFist2.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsFist2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsFist2.BackgroundTransparency = 1
 ShowStatsFist2.Position = UDim2.new(0, 85, 0, 22)
 ShowStatsFist2.Size = UDim2.new(0, 105, 0, 90)
@@ -827,7 +827,7 @@ ShowStatsFist2.TextXAlignment = Enum.TextXAlignment.Right
 
 StatBestBodyText1.Name = "StatBestBodyText1"
 StatBestBodyText1.Parent = PlayerInfoStatsFrame
-StatBestBodyText1.BackgroundColor3 = Color3.new(1, 1, 1)
+StatBestBodyText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 StatBestBodyText1.BackgroundTransparency = 1
 StatBestBodyText1.Position = UDim2.new(0, 195, 0, 2)
 StatBestBodyText1.Size = UDim2.new(0, 160, 0, 20)
@@ -839,7 +839,7 @@ StatBestBodyText1.TextSize = 13
 
 ShowStatsBody1.Name = "ShowStatsBody1"
 ShowStatsBody1.Parent = PlayerInfoStatsFrame
-ShowStatsBody1.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsBody1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsBody1.BackgroundTransparency = 1
 ShowStatsBody1.Position = UDim2.new(0, 195, 0, 22)
 ShowStatsBody1.Size = UDim2.new(0, 50, 0, 90)
@@ -852,7 +852,7 @@ ShowStatsBody1.TextXAlignment = Enum.TextXAlignment.Right
 
 ShowStatsBody2.Name = "ShowStatsBody2"
 ShowStatsBody2.Parent = PlayerInfoStatsFrame
-ShowStatsBody2.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsBody2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsBody2.BackgroundTransparency = 1
 ShowStatsBody2.Position = UDim2.new(0, 250, 0, 22)
 ShowStatsBody2.Size = UDim2.new(0, 105, 0, 90)
@@ -865,7 +865,7 @@ ShowStatsBody2.TextXAlignment = Enum.TextXAlignment.Right
 
 StatBestSpeedText1.Name = "StatBestSpeedText1"
 StatBestSpeedText1.Parent = PlayerInfoStatsFrame
-StatBestSpeedText1.BackgroundColor3 = Color3.new(1, 1, 1)
+StatBestSpeedText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 StatBestSpeedText1.BackgroundTransparency = 1
 StatBestSpeedText1.Position = UDim2.new(0, 360, 0, 2)
 StatBestSpeedText1.Size = UDim2.new(0, 160, 0, 20)
@@ -877,7 +877,7 @@ StatBestSpeedText1.TextSize = 13
 
 ShowStatsSpeed1.Name = "ShowStatsSpeed1"
 ShowStatsSpeed1.Parent = PlayerInfoStatsFrame
-ShowStatsSpeed1.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsSpeed1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsSpeed1.BackgroundTransparency = 1
 ShowStatsSpeed1.Position = UDim2.new(0, 360, 0, 22)
 ShowStatsSpeed1.Size = UDim2.new(0, 50, 0, 90)
@@ -890,7 +890,7 @@ ShowStatsSpeed1.TextXAlignment = Enum.TextXAlignment.Right
 
 ShowStatsSpeed2.Name = "ShowStatsSpeed2"
 ShowStatsSpeed2.Parent = PlayerInfoStatsFrame
-ShowStatsSpeed2.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsSpeed2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsSpeed2.BackgroundTransparency = 1
 ShowStatsSpeed2.Position = UDim2.new(0, 415, 0, 22)
 ShowStatsSpeed2.Size = UDim2.new(0, 105, 0, 90)
@@ -903,7 +903,7 @@ ShowStatsSpeed2.TextXAlignment = Enum.TextXAlignment.Right
 
 StatBestJumpText1.Name = "StatBestJumpText1"
 StatBestJumpText1.Parent = PlayerInfoStatsFrame
-StatBestJumpText1.BackgroundColor3 = Color3.new(1, 1, 1)
+StatBestJumpText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 StatBestJumpText1.BackgroundTransparency = 1
 StatBestJumpText1.Position = UDim2.new(0, 525, 0, 2)
 StatBestJumpText1.Size = UDim2.new(0, 160, 0, 20)
@@ -915,7 +915,7 @@ StatBestJumpText1.TextSize = 13
 
 ShowStatsJump1.Name = "ShowStatsJump1"
 ShowStatsJump1.Parent = PlayerInfoStatsFrame
-ShowStatsJump1.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsJump1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsJump1.BackgroundTransparency = 1
 ShowStatsJump1.Position = UDim2.new(0, 525, 0, 22)
 ShowStatsJump1.Size = UDim2.new(0, 50, 0, 90)
@@ -928,7 +928,7 @@ ShowStatsJump1.TextXAlignment = Enum.TextXAlignment.Right
 
 ShowStatsJump2.Name = "ShowStatsJump2"
 ShowStatsJump2.Parent = PlayerInfoStatsFrame
-ShowStatsJump2.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsJump2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsJump2.BackgroundTransparency = 1
 ShowStatsJump2.Position = UDim2.new(0, 580, 0, 22)
 ShowStatsJump2.Size = UDim2.new(0, 105, 0, 90)
@@ -941,7 +941,7 @@ ShowStatsJump2.TextXAlignment = Enum.TextXAlignment.Right
 
 StatBestPsychicText1.Name = "StatBestPsychicText1"
 StatBestPsychicText1.Parent = PlayerInfoStatsFrame
-StatBestPsychicText1.BackgroundColor3 = Color3.new(1, 1, 1)
+StatBestPsychicText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 StatBestPsychicText1.BackgroundTransparency = 1
 StatBestPsychicText1.Position = UDim2.new(0, 690, 0, 2)
 StatBestPsychicText1.Size = UDim2.new(0, 160, 0, 20)
@@ -953,7 +953,7 @@ StatBestPsychicText1.TextSize = 13
 
 ShowStatsPsychic1.Name = "ShowStatsPsychic1"
 ShowStatsPsychic1.Parent = PlayerInfoStatsFrame
-ShowStatsPsychic1.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsPsychic1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsPsychic1.BackgroundTransparency = 1
 ShowStatsPsychic1.Position = UDim2.new(0, 690, 0, 22)
 ShowStatsPsychic1.Size = UDim2.new(0, 50, 0, 90)
@@ -966,7 +966,7 @@ ShowStatsPsychic1.TextXAlignment = Enum.TextXAlignment.Right
 
 ShowStatsPsychic2.Name = "ShowStatsPsychic2"
 ShowStatsPsychic2.Parent = PlayerInfoStatsFrame
-ShowStatsPsychic2.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStatsPsychic2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStatsPsychic2.BackgroundTransparency = 1
 ShowStatsPsychic2.Position = UDim2.new(0, 745, 0, 22)
 ShowStatsPsychic2.Size = UDim2.new(0, 105, 0, 90)
@@ -979,7 +979,7 @@ ShowStatsPsychic2.TextXAlignment = Enum.TextXAlignment.Right
 
 Extras.Name = "Extras"
 Extras.Parent = MainFrame
-Extras.BackgroundColor3 = Color3.new(1, 1, 1)
+Extras.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 Extras.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 Extras.Position = UDim2.new(0, 505, 0, 5)
 Extras.Size = UDim2.new(0, 50, 0, 20)
@@ -991,7 +991,7 @@ Extras.TextWrapped = true
 
 ExtrasFrame.Name = "ExtrasFrame"
 ExtrasFrame.Parent = MainFrame
-ExtrasFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ExtrasFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ExtrasFrame.BorderColor3 = Color3.new(0, 0, 0)
 ExtrasFrame.BackgroundTransparency = 0.2
 ExtrasFrame.Position = UDim2.new(0, 435, 0, 33)
@@ -1013,7 +1013,7 @@ AnnoyName.TextWrapped = true
 
 TptoPlayer.Name = "TptoPlayer"
 TptoPlayer.Parent = ExtrasFrame
-TptoPlayer.BackgroundColor3 = Color3.new(1, 1, 1)
+TptoPlayer.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 TptoPlayer.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 TptoPlayer.Position = UDim2.new(0, 5, 0, 26)
 TptoPlayer.Size = UDim2.new(0, 150, 0, 20)
@@ -1025,7 +1025,7 @@ TptoPlayer.TextWrapped = true
 
 AnnoyStart.Name = "AnnoyStart"
 AnnoyStart.Parent = ExtrasFrame
-AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
+AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 AnnoyStart.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 AnnoyStart.Position = UDim2.new(0, 5, 0, 47)
 AnnoyStart.Size = UDim2.new(0, 150, 0, 20)
@@ -1037,7 +1037,7 @@ AnnoyStart.TextWrapped = true
 
 PanicToggleLabel.Name = "PanicToggleLabel"
 PanicToggleLabel.Parent = ExtrasFrame
-PanicToggleLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+PanicToggleLabel.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 PanicToggleLabel.BorderSizePixel = 0
 PanicToggleLabel.Position = UDim2.new(0, 5, 0, 77)
 PanicToggleLabel.Size = UDim2.new(0, 125, 0, 20)
@@ -1061,7 +1061,7 @@ PanicToggle.TextWrapped = true
 
 NoClip.Name = "NoClip"
 NoClip.Parent = ExtrasFrame
-NoClip.BackgroundColor3 = Color3.new(1, 1, 1)
+NoClip.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 NoClip.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 NoClip.Position = UDim2.new(0, 5, 0, 107)
 NoClip.Size = UDim2.new(0, 150, 0, 20)
@@ -1073,7 +1073,7 @@ NoClip.TextWrapped = true
 
 farmbtsafetylabel.Name = "farmbtsafetylabel"
 farmbtsafetylabel.Parent = ExtrasFrame
-farmbtsafetylabel.BackgroundColor3 = Color3.new(1, 1, 1)
+farmbtsafetylabel.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 farmbtsafetylabel.BorderSizePixel = 0
 farmbtsafetylabel.Position = UDim2.new(0, 5, 0, 137)
 farmbtsafetylabel.Size = UDim2.new(0, 120, 0, 20)
@@ -1097,7 +1097,7 @@ farmbtsafetylevel.TextWrapped = true
 
 farmbtsafety.Name = "farmbtsafety"
 farmbtsafety.Parent = ExtrasFrame
-farmbtsafety.BackgroundColor3 = Color3.new(1, 1, 1)
+farmbtsafety.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 farmbtsafety.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 farmbtsafety.Position = UDim2.new(0, 5, 0, 158)
 farmbtsafety.Size = UDim2.new(0, 150, 0, 20)
@@ -1109,9 +1109,9 @@ farmbtsafety.TextWrapped = true
 
 farmbtsafetyText1.Name = "farmbtsafetyText1"
 farmbtsafetyText1.Parent = ExtrasFrame
-farmbtsafetyText1.BackgroundColor3 = Color3.new(1, 1, 1)
+farmbtsafetyText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 farmbtsafetyText1.TextColor3 = Color3.new(1, 1, 1)
-farmbtsafetyText1.BorderColor3 = Color3.new(1, 1, 1)
+farmbtsafetyText1.BorderColor3 = Color3.new(0.1, 0.1, 0.1)
 farmbtsafetyText1.Position = UDim2.new(0, -155, 0, 141)
 farmbtsafetyText1.Size = UDim2.new(0, 150, 0, 115)
 farmbtsafetyText1.Font = Enum.Font.Fantasy
@@ -1122,7 +1122,7 @@ farmbtsafetyText1.Visible = false
 
 ReJoinServer.Name = "ReJoinServer"
 ReJoinServer.Parent = ExtrasFrame
-ReJoinServer.BackgroundColor3 = Color3.new(1, 1, 1)
+ReJoinServer.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ReJoinServer.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 ReJoinServer.Position = UDim2.new(0, 5, 0, 188)
 ReJoinServer.Size = UDim2.new(0, 150, 0, 20)
@@ -1134,7 +1134,7 @@ ReJoinServer.TextWrapped = true
 
 InfoScreen.Name = "InfoScreen"
 InfoScreen.Parent = MainFrame
-InfoScreen.BackgroundColor3 = Color3.new(1, 1, 1)
+InfoScreen.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 InfoScreen.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 InfoScreen.Position = UDim2.new(0, 560, 0, 5)
 InfoScreen.Size = UDim2.new(0, 40, 0, 20)
@@ -1147,7 +1147,7 @@ InfoScreen.TextWrapped = true
 
 InfoText1.Name = "InfoText1"
 InfoText1.Parent = MainFrame
-InfoText1.BackgroundColor3 = Color3.new(1, 1, 1)
+InfoText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 InfoText1.BorderColor3 = Color3.new(0, 0, 0)
 InfoText1.BackgroundTransparency = 0
 InfoText1.Position = UDim2.new(0, 405, 0, 32)
@@ -1176,8 +1176,8 @@ PlayerName.TextWrapped = false
 
 StatsFrame.Name = "StatsFrame"
 StatsFrame.Parent = MainFrame
-StatsFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-StatsFrame.BorderColor3 = Color3.new(1, 1, 1)
+StatsFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+StatsFrame.BorderColor3 = Color3.new(0.1, 0.1, 0.1)
 StatsFrame.BackgroundTransparency = 0
 StatsFrame.Position = UDim2.new(0, 600, 0, 33)
 StatsFrame.Size = UDim2.new(0, 161, 0, 90)
@@ -1185,7 +1185,7 @@ StatsFrame.Visible = false
 
 ShowStats1.Name = "ShowStats1"
 ShowStats1.Parent = StatsFrame
-ShowStats1.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStats1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStats1.BackgroundTransparency = 1
 ShowStats1.Position = UDim2.new(0, 0, 0, 0)
 ShowStats1.Size = UDim2.new(0, 50, 0, 90)
@@ -1197,7 +1197,7 @@ ShowStats1.TextXAlignment = Enum.TextXAlignment.Right
 
 ShowStats2.Name = "ShowStats2"
 ShowStats2.Parent = StatsFrame
-ShowStats2.BackgroundColor3 = Color3.new(1, 1, 1)
+ShowStats2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 ShowStats2.BackgroundTransparency = 1
 ShowStats2.Position = UDim2.new(0, 55, 0, 0)
 ShowStats2.Size = UDim2.new(0, 103, 0, 90)
@@ -1328,7 +1328,7 @@ NoClip.MouseButton1Down:connect(function()
 		NoClip.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		NoClip.Text = "NoClip Mode: OFF"
-		NoClip.BackgroundColor3 = Color3.new(1, 1, 1)
+		NoClip.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 game:GetService('RunService').Stepped:connect(function()
@@ -1346,7 +1346,7 @@ farmbtsafety.MouseButton1Down:connect(function()
 		farmbtsafety.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		farmbtsafety.Text = "Safety Net: OFF"
-		farmbtsafety.BackgroundColor3 = Color3.new(1, 1, 1)
+		farmbtsafety.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1496,14 +1496,14 @@ FarmAll.MouseButton1Click:Connect(function()
 		farmspeedactive = false
 		farmpsychicactive = false
 		farmjumpactive = false
-		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
-		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
-		FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
-		FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
-		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
-		FarmAll.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmBody.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmSpeed.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmJump.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmAll.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		FarmAll.Text = "Farm All: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1515,9 +1515,9 @@ FarmFist.MouseButton1Click:Connect(function()
 		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		farmfistactive = false
-		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		FarmFist.Text = "Farm Fist Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1529,9 +1529,9 @@ FarmBody.MouseButton1Click:Connect(function()
 		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		farmbodyactive = false
-		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmBody.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		FarmBody.Text = "Farm Body Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1543,9 +1543,9 @@ FarmSpeed.MouseButton1Click:Connect(function()
 		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		farmspeedactive = false
-		FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmSpeed.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		FarmSpeed.Text = "Farm Speed Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1557,9 +1557,9 @@ FarmJump.MouseButton1Click:Connect(function()
 		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		farmjumpactive = false
-		FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmJump.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		FarmJump.Text = "Farm Jump Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1571,9 +1571,9 @@ FarmPsychic.MouseButton1Click:Connect(function()
 		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
 	else
 		farmpsychicactive = false
-		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		FarmPsychic.Text = "Farm Psychic Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 
@@ -1584,19 +1584,19 @@ spawn(function()
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-369, 15735, -9)
 				fistarguments = {"+FS6"}
 				farmpsychicactive = false
-				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmPsychic.Text = "Farm Psychic Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.FistStrength.Value)) >= 100e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1381, 9274, 1647)
 				fistarguments = {"+FS5"}
 				farmpsychicactive = false
-				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmPsychic.Text = "Farm Psychic Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.FistStrength.Value)) >= 1e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1176, 4789, -2293)
 				fistarguments = {"+FS4"}
 				farmpsychicactive = false
-				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmPsychic.Text = "Farm Psychic Strength: OFF"
 			else
 				fistarguments = {"+FS3", "+FS2", "+FS1"}
@@ -1670,25 +1670,25 @@ spawn(function()
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2544, 5412, -495)
 				psychicarguments = {"+PP6"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.PsychicPower.Value)) >= 1e12 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2582, 5516, -504)
 				psychicarguments = {"+PP5"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.PsychicPower.Value)) >= 1e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2560, 5500, -439)
 				psychicarguments = {"+PP4"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.PsychicPower.Value)) >= 1e06 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2527, 5486, -532)
 				psychicarguments = {"+PP3"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			else
 				psychicarguments = {"+PP2", "+PP1"}
@@ -1718,14 +1718,14 @@ spawn(function()
 		local colorrr = Color3.fromHSV(hue, 1, 1)
 		DeathReturn.BackgroundColor3 = colorrr
 		if deathreturnactive == false then
-			DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
+			DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 			break
 		end
 	end
 end)
 	else
 		deathreturnactive = false
-		DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
+		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		DeathReturn.Text = "OnDeath Return: OFF"
 	end
 end)
@@ -1778,7 +1778,7 @@ AnnoyStart.MouseButton1Click:Connect(function()
 		AnnoyStart.Text = "TP Spam Player: ON"
 	else
 		annoyplayeractive = false
-		AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
+		AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		AnnoyStart.Text = "TP Spam Player: OFF"
 	end
 end)
@@ -1793,12 +1793,12 @@ spawn(function()
 					local startpos = player.HumanoidRootPart.CFrame
 					v.Character.Humanoid.Died:connect(function()
 						annoyplayeractive = false
-						AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
+						AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 						AnnoyStart.Text = "TP Spam Player: OFF"
 					end)
 					player.Humanoid.Died:connect(function()
 						annoyplayeractive = false
-						AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
+						AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 						AnnoyStart.Text = "TP Spam Player: OFF"
 					end)
 					while annoyplayeractive == true do
@@ -1851,7 +1851,7 @@ esptrack.MouseButton1Click:connect(function()
 			end
 		end
 	else
-		esptrack.BackgroundColor3 = Color3.new(1, 1, 1)
+		esptrack.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		for _, v in next, Plrs:GetPlayers() do
 			RemoveESP(v)
 		end
