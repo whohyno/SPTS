@@ -104,7 +104,7 @@ function CreateESP(plr)
 		TxtDist.ZIndex = 10
 		TxtDist.Text = ""
 		TxtDist.BackgroundTransparency = 1
-		TxtDist.Position = UDim2.new(0, 0, 0, -35)
+		TxtDist.Position = UDim2.new(0, 0, 0, -36)
 		TxtDist.Size = UDim2.new(1, 0, 10, 0)
 		TxtDist.Font = "SourceSansBold"
 		TxtDist.TextColor3 = Color3.new(0, 0, 0)
@@ -116,7 +116,7 @@ function CreateESP(plr)
 		TxtHealth.ZIndex = 10
 		TxtHealth.Text = ""
 		TxtHealth.BackgroundTransparency = 1
-		TxtHealth.Position = UDim2.new(0, 0, 0, -25)
+		TxtHealth.Position = UDim2.new(0, 0, 0, -35)
 		TxtHealth.Size = UDim2.new(1, 0, 10, 0)
 		TxtHealth.Font = "SourceSansBold"
 		TxtHealth.TextColor3 = Color3.new(0, 0, 0)
@@ -128,7 +128,7 @@ function CreateESP(plr)
 		TxtFist.ZIndex = 10
 		TxtFist.Text = ""
 		TxtFist.BackgroundTransparency = 1
-		TxtFist.Position = UDim2.new(0, 0, 0, -15)
+		TxtFist.Position = UDim2.new(0, 0, 0, -25)
 		TxtFist.Size = UDim2.new(1, 0, 10, 0)
 		TxtFist.Font = "SourceSansBold"
 		TxtFist.TextColor3 = Color3.new(0, 0, 0)
@@ -140,7 +140,7 @@ function CreateESP(plr)
 		TxtBody.ZIndex = 10
 		TxtBody.Text = ""
 		TxtBody.BackgroundTransparency = 1
-		TxtBody.Position = UDim2.new(0, 0, 0, -5)
+		TxtBody.Position = UDim2.new(0, 0, 0, -15)
 		TxtBody.Size = UDim2.new(1, 0, 10, 0)
 		TxtBody.Font = "SourceSansBold"
 		TxtBody.TextColor3 = Color3.new(0, 0, 0)
