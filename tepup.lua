@@ -419,7 +419,7 @@ WayPointsFrame.Visible = false
 FarmExp.Name = "FarmExp"
 FarmExp.Parent = MainFrame
 FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
-FarmExp.BorderColor3 = Color3.new(1, 1, 1)
+FarmExp.BorderColor3 = Color3.new(0, 0, 0)
 FarmExp.Position = UDim2.new(0, 130, 0, 5)
 FarmExp.Size = UDim2.new(0, 75, 0, 20)
 FarmExp.Font = Enum.Font.Fantasy
@@ -607,9 +607,9 @@ LocationPP1Qa.TextSize = 16
 
 FarmAll.Name = "FarmAll"
 FarmAll.Parent = FarmExpFrame
-FarmAll.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-FarmAll.TextColor3 = Color3.new(1, 1, 1)
-FarmAll.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+FarmAll.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmAll.TextColor3 = Color3.new(0, 0, 0)
+FarmAll.BorderColor3 = Color3.new(0, 0, 0)
 FarmAll.Position = UDim2.new(0, 5, 0, 5)
 FarmAll.Size = UDim2.new(0, 200, 0, 20)
 FarmAll.Font = Enum.Font.Fantasy
@@ -717,8 +717,8 @@ DeathReturn.TextWrapped = true
 
 esptrack.Name = "esptrack"
 esptrack.Parent = MainFrame
-esptrack.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-esptrack.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+esptrack.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
+esptrack.BorderColor3 = Color3.new(1, 1, 1)
 esptrack.Position = UDim2.new(0, 375, 0, 5)
 esptrack.Size = UDim2.new(0, 35, 0, 20)
 esptrack.TextColor3 = Color3.new(1, 1, 1)
@@ -1486,9 +1486,9 @@ FarmAll.MouseButton1Click:Connect(function()
 		farmspeedactive = true
 		farmpsychicactive = true
 		farmjumpactive = true
-		FarmAll.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmAll.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmAll.Text = "Farm All: ON"
-		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	else
 		farmallactive = false
 		farmfistactive = false
@@ -1496,37 +1496,37 @@ FarmAll.MouseButton1Click:Connect(function()
 		farmspeedactive = false
 		farmpsychicactive = false
 		farmjumpactive = false
-		FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-		FarmBody.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-		FarmSpeed.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-		FarmJump.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-		FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-		FarmAll.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmAll.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmAll.Text = "Farm All: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
 FarmFist.MouseButton1Click:Connect(function()
 	if farmfistactive ~= true then
 		farmfistactive = true
-		FarmFist.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmFist.Text = "Farm Fist Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	else
 		farmfistactive = false
-		FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmFist.Text = "Farm Fist Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
 FarmBody.MouseButton1Click:Connect(function()
 	if farmbodyactive ~= true then
 		farmbodyactive = true
-		FarmBody.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmBody.Text = "Farm Body Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1,1)
 	else
 		farmbodyactive = false
 		FarmBody.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
@@ -1834,7 +1834,7 @@ end)
 esptrack.MouseButton1Click:connect(function()
 	ESPEnabled = not ESPEnabled
 	if ESPEnabled then
-		esptrack.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		esptrack.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		for _, v in next, Plrs:GetPlayers() do
 			if v ~= MyPlr then
 				if CharAddedEvent[v.Name] == nil then
