@@ -232,6 +232,7 @@ end
 local MainGUI = Instance.new("ScreenGui")
 local TopFrame = Instance.new("Frame")
 local MainFrame = Instance.new("Frame")
+local Logo = Instance.new("ImageLabel")
 local Open = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
 local Minimize = Instance.new("TextButton")
@@ -331,7 +332,6 @@ local ShowStats2 = Instance.new("TextLabel")
 local StatNameSet = Instance.new("TextButton")
 local NoClip = Instance.new("TextButton")
 local GodMode = Instance.new("TextButton")
-local Logo = Instance.new("ImageLabel")
 
 -- Properties
 
@@ -439,14 +439,20 @@ FarmExpFrame.Size = UDim2.new(0, 210, 0, 165)
 FarmExpFrame.Visible = false
 
 Logo.Name = "Logo"
-Logo.Parent = MainFrame
+Logo.Parent = MainGUI
 Logo.BackgroundTransparency = 1
 Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0, 125, 0, 127)
-Logo.Size = UDim2.new(0, 10, 0, 10)
-Logo.Image = "rbxassetid://9846436903"
+Logo.Position = UDim2.new(0, 944, 0, 898)
+Logo.Size = UDim2.new(0, 75, 0, 75)
+Logo.Image = "rbxassetid://98464368487"
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
+
+spawn(function()
+	while task.wait() do
+		Logo.ImageColor3 = colorrr
+	end
+end)
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
