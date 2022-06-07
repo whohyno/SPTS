@@ -445,14 +445,9 @@ Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0, 944, 0, 898)
 Logo.Size = UDim2.new(0, 75, 0, 75)
 Logo.Image = "rbxassetid://98464368487"
+Logo.ImageColor3 = Color3.new(1, 1, 1)
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
-
-spawn(function()
-	while task.wait() do
-		Logo.ImageColor3 = colorrr
-	end
-end)
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
