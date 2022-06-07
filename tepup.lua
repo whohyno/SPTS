@@ -726,7 +726,7 @@ esptrack.Font = Enum.Font.Fantasy
 esptrack.Text = "ESP"
 esptrack.TextSize = 16
 esptrack.TextWrapped = true
-//---------------------------------
+
 PlayerInfo.Name = "PlayerInfo"
 PlayerInfo.Parent = MainFrame
 PlayerInfo.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -976,7 +976,7 @@ ShowStatsPsychic2.Text = "Stats"
 ShowStatsPsychic2.TextSize = 14
 ShowStatsPsychic2.ZIndex = 8
 ShowStatsPsychic2.TextXAlignment = Enum.TextXAlignment.Right
-//-------------------------------------------------
+
 Extras.Name = "Extras"
 Extras.Parent = MainFrame
 Extras.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
