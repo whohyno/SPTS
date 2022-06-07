@@ -705,12 +705,12 @@ FarmSpeedLabel.Visible = false
 
 DeathReturn.Name = "DeathReturn"
 DeathReturn.Parent = MainFrame
-DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-DeathReturn.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
+DeathReturn.BorderColor3 = Color3.new(0, 0, 0)
 DeathReturn.Position = UDim2.new(0, 210, 0, 5)
 DeathReturn.Size = UDim2.new(0, 160, 0, 20)
 DeathReturn.Font = Enum.Font.Fantasy
-DeathReturn.TextColor3 = Color3.new(1, 1, 1)
+DeathReturn.TextColor3 = Color3.new(0, 0, 0)
 DeathReturn.Text = "OnDeath Return: OFF"
 DeathReturn.TextSize = 17
 DeathReturn.TextWrapped = true
@@ -729,11 +729,11 @@ esptrack.TextWrapped = true
 
 PlayerInfo.Name = "PlayerInfo"
 PlayerInfo.Parent = MainFrame
-PlayerInfo.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-PlayerInfo.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+PlayerInfo.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerInfo.BorderColor3 = Color3.new(0, 0, 0)
 PlayerInfo.Position = UDim2.new(0, 415, 0, 5)
 PlayerInfo.Size = UDim2.new(0, 85, 0, 20)
-PlayerInfo.TextColor3 = Color3.new(1, 1, 1)
+PlayerInfo.TextColor3 = Color3.new(0, 0, 0)
 PlayerInfo.Font = Enum.Font.Fantasy
 PlayerInfo.Text = "Top Players"
 PlayerInfo.TextSize = 16
@@ -775,13 +775,13 @@ PlayerInfoStatsFrame.Visible = false
 
 PlayerInfoStatsClose.Name = "PlayerInfoStatsClose"
 PlayerInfoStatsClose.Parent = PlayerInfoStatsFrame
-PlayerInfoStatsClose.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-PlayerInfoStatsClose.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+PlayerInfoStatsClose.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerInfoStatsClose.BorderColor3 = Color3.new(0, 0, 0)
 PlayerInfoStatsClose.Position = UDim2.new(0, 5, 0, 5)
 PlayerInfoStatsClose.Size = UDim2.new(0, 20, 0, 20)
 PlayerInfoStatsClose.Font = Enum.Font.Fantasy
 PlayerInfoStatsClose.Text = "X"
-PlayerInfoStatsClose.TextColor3 = Color3.new(1, 0, 0)
+PlayerInfoStatsClose.TextColor3 = Color3.new(0, 0, 0)
 PlayerInfoStatsClose.TextSize = 17
 PlayerInfoStatsClose.ZIndex = 8
 PlayerInfoStatsClose.TextScaled = true
@@ -806,7 +806,7 @@ ShowStatsFist1.BackgroundTransparency = 1
 ShowStatsFist1.Position = UDim2.new(0, 30, 0, 22)
 ShowStatsFist1.Size = UDim2.new(0, 50, 0, 90)
 ShowStatsFist1.Font = Enum.Font.Fantasy
-ShowStatsFist1.TextColor3 = Color3.new(1, 1, 0)
+ShowStatsFist1.TextColor3 = Color3.fromRGB(255, 166, 0)
 ShowStatsFist1.Text = "Health:\nFist:\nBody:\nSpeed:\nJump:\nPsychic:"
 ShowStatsFist1.TextSize = 14
 ShowStatsFist1.ZIndex = 8
@@ -844,7 +844,7 @@ ShowStatsBody1.BackgroundTransparency = 1
 ShowStatsBody1.Position = UDim2.new(0, 195, 0, 22)
 ShowStatsBody1.Size = UDim2.new(0, 50, 0, 90)
 ShowStatsBody1.Font = Enum.Font.Fantasy
-ShowStatsBody1.TextColor3 = Color3.new(1, 1, 0)
+ShowStatsBody1.TextColor3 = Color3.fromRGB(255, 166, 0)
 ShowStatsBody1.Text = "Health:\nFist:\nBody:\nSpeed:\nJump:\nPsychic:"
 ShowStatsBody1.TextSize = 14
 ShowStatsBody1.ZIndex = 8
@@ -882,7 +882,7 @@ ShowStatsSpeed1.BackgroundTransparency = 1
 ShowStatsSpeed1.Position = UDim2.new(0, 360, 0, 22)
 ShowStatsSpeed1.Size = UDim2.new(0, 50, 0, 90)
 ShowStatsSpeed1.Font = Enum.Font.Fantasy
-ShowStatsSpeed1.TextColor3 = Color3.new(1, 1, 0)
+ShowStatsSpeed1.TextColor3 = Color3.fromRGB(255, 166, 0)
 ShowStatsSpeed1.Text = "Health:\nFist:\nBody:\nSpeed:\nJump:\nPsychic:"
 ShowStatsSpeed1.TextSize = 14
 ShowStatsSpeed1.ZIndex = 8
@@ -920,7 +920,7 @@ ShowStatsJump1.BackgroundTransparency = 1
 ShowStatsJump1.Position = UDim2.new(0, 525, 0, 22)
 ShowStatsJump1.Size = UDim2.new(0, 50, 0, 90)
 ShowStatsJump1.Font = Enum.Font.Fantasy
-ShowStatsJump1.TextColor3 = Color3.new(1, 1, 0)
+ShowStatsJump1.TextColor3 = Color3.fromRGB(255, 166, 0)
 ShowStatsJump1.Text = "Health:\nFist:\nBody:\nSpeed:\nJump:\nPsychic:"
 ShowStatsJump1.TextSize = 14
 ShowStatsJump1.ZIndex = 8
@@ -958,7 +958,7 @@ ShowStatsPsychic1.BackgroundTransparency = 1
 ShowStatsPsychic1.Position = UDim2.new(0, 690, 0, 22)
 ShowStatsPsychic1.Size = UDim2.new(0, 50, 0, 90)
 ShowStatsPsychic1.Font = Enum.Font.Fantasy
-ShowStatsPsychic1.TextColor3 = Color3.new(1, 1, 0)
+ShowStatsPsychic1.TextColor3 = Color3.fromRGB(255, 166, 0)
 ShowStatsPsychic1.Text = "Health:\nFist:\nBody:\nSpeed:\nJump:\nPsychic:"
 ShowStatsPsychic1.TextSize = 14
 ShowStatsPsychic1.ZIndex = 8
@@ -1134,21 +1134,21 @@ ReJoinServer.TextWrapped = true
 
 InfoScreen.Name = "InfoScreen"
 InfoScreen.Parent = MainFrame
-InfoScreen.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-InfoScreen.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+InfoScreen.BackgroundColor3 = Color3.new(1, 1, 1)
+InfoScreen.BorderColor3 = Color3.new(0, 0, 0)
 InfoScreen.Position = UDim2.new(0, 560, 0, 5)
 InfoScreen.Size = UDim2.new(0, 40, 0, 20)
 InfoScreen.BackgroundTransparency = 0
 InfoScreen.Font = Enum.Font.Fantasy
-InfoScreen.TextColor3 = Color3.new(1, 1, 1)
+InfoScreen.TextColor3 = Color3.new(0, 0, 0)
 InfoScreen.Text = "Info"
 InfoScreen.TextSize = 17
 InfoScreen.TextWrapped = true
 
 InfoText1.Name = "InfoText1"
 InfoText1.Parent = MainFrame
-InfoText1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-InfoText1.BorderColor3 = Color3.new(0, 0, 0)
+InfoText1.BackgroundColor3 = Color3.new(0, 0, 0)
+InfoText1.BorderColor3 = Color3.new(1, 1, 1)
 InfoText1.BackgroundTransparency = 0
 InfoText1.Position = UDim2.new(0, 405, 0, 32)
 InfoText1.Size = UDim2.new(0, 141, 0, 18)
@@ -1510,9 +1510,9 @@ end)
 FarmFist.MouseButton1Click:Connect(function()
 	if farmfistactive ~= true then
 		farmfistactive = true
-		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmFist.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmFist.Text = "Farm Fist Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmfistactive = false
 		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1524,56 +1524,56 @@ end)
 FarmBody.MouseButton1Click:Connect(function()
 	if farmbodyactive ~= true then
 		farmbodyactive = true
-		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmBody.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmBody.Text = "Farm Body Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1,1)
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmbodyactive = false
-		FarmBody.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmBody.Text = "Farm Body Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
 FarmSpeed.MouseButton1Click:Connect(function()
 	if farmspeedactive ~= true then
 		farmspeedactive = true
-		FarmSpeed.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmSpeed.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmSpeed.Text = "Farm Speed Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmspeedactive = false
-		FarmSpeed.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmSpeed.Text = "Farm Speed Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
 FarmJump.MouseButton1Click:Connect(function()
 	if farmjumpactive ~= true then
 		farmjumpactive = true
-		FarmJump.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmJump.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmJump.Text = "Farm Jump Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmjumpactive = false
-		FarmJump.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmJump.Text = "Farm Jump Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
 FarmPsychic.MouseButton1Click:Connect(function()
 	if farmpsychicactive ~= true then
 		farmpsychicactive = true
-		FarmPsychic.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmPsychic.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmPsychic.Text = "Farm Psychic Strength: ON"
-		FarmExp.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmpsychicactive = false
-		FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
 		FarmPsychic.Text = "Farm Psychic Strength: OFF"
-		FarmExp.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
@@ -1718,14 +1718,14 @@ spawn(function()
 		local colorrr = Color3.fromHSV(hue, 1, 1)
 		DeathReturn.BackgroundColor3 = colorrr
 		if deathreturnactive == false then
-			DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+			DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
 			break
 		end
 	end
 end)
 	else
 		deathreturnactive = false
-		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
 		DeathReturn.Text = "OnDeath Return: OFF"
 	end
 end)
