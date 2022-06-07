@@ -1716,7 +1716,10 @@ spawn(function()
 		local t = 5; 
 		local hue = tick() % t / t
 		local colorrr = Color3.fromHSV(hue, 1, 1)
-		DeathReturn.BackgroundColor3 = colorrr		
+		DeathReturn.BackgroundColor3 = colorrr
+		if deathreturnactive == false then
+			break				
+		end
 	end
 end)
 	else
