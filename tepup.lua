@@ -1708,17 +1708,8 @@ end)
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
+		DeathReturn.BackgroundColor3 = Color3.New(0, 0.5, 0)
 		DeathReturn.Text = "OnDeath Return: ON"
-			
-spawn(function()
-	while task.wait() do
-		if deathreturnactive ~= true then
-		local t = 5; 
-		local hue = tick() % t / t
-		local colorrr = Color3.fromHSV(hue, 1, 1)
-		DeathReturn.BackgroundColor3 = colorrr
-	end
-end)
 	else
 		deathreturnactive = false
 		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
