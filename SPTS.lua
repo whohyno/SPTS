@@ -1337,10 +1337,10 @@ NoClip.MouseButton1Down:connect(function()
 	noclip = not noclip
 	if noclip then
 		NoClip.Text = "NoClip Mode: ON"
-		NoClip.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		NoClip.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		NoClip.Text = "NoClip Mode: OFF"
-		NoClip.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		NoClip.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 game:GetService('RunService').Stepped:connect(function()
@@ -1355,10 +1355,10 @@ farmbtsafety.MouseButton1Down:connect(function()
 	farmbtsafetyactive = not farmbtsafetyactive
 	if farmbtsafetyactive then
 		farmbtsafety.Text = "Safety Net: ON"
-		farmbtsafety.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		farmbtsafety.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmbtsafety.Text = "Safety Net: OFF"
-		farmbtsafety.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		farmbtsafety.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
 
@@ -1791,11 +1791,11 @@ end)
 AnnoyStart.MouseButton1Click:Connect(function()
 	if annoyplayeractive ~= true then
 		annoyplayeractive = true
-		AnnoyStart.BackgroundColor3 = Color3.new(0, 0.5, 0)
+		AnnoyStart.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		AnnoyStart.Text = "TP Spam Player: ON"
 	else
 		annoyplayeractive = false
-		AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
 		AnnoyStart.Text = "TP Spam Player: OFF"
 	end
 end)
