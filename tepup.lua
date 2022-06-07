@@ -1722,14 +1722,7 @@ end)
 	else
 		deathreturnactive = false
 		DeathReturn.Text = "OnDeath Return: OFF"
-				
-spawn(function()
-	while task.wait() do
-		if deathreturnactive ~= false then
-		local tt = 5;
-		local huee = tick() % tt / tt
-      		local color2 = Color3.fromHSV(huee, 1, 1)
-		DeathReturn.BackgroundColor3 = color2
+		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 	end
 end)
 					
