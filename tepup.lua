@@ -1712,11 +1712,12 @@ DeathReturn.MouseButton1Click:Connect(function()
 		DeathReturn.Text = "OnDeath Return: ON"
 			
 spawn(function()
-	while task.wait() do
-		local t = 5; 
-		local hue = tick() % t / t
-		local colorrr = Color3.fromHSV(hue, 1, 1)
-		DeathReturn.BackgroundColor3 = colorrr		
+	if deathreturnactive ~= true then
+		while task.wait() do
+			local t = 5; 
+			local hue = tick() % t / t
+			local colorrr = Color3.fromHSV(hue, 1, 1)
+			DeathReturn.BackgroundColor3 = colorrr		
 	end
 end)
 	else
