@@ -362,7 +362,7 @@ Open.TextWrapped = true
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = MainGUI
-MainFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
 MainFrame.BackgroundTransparency = 0.5
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.5, -382.5, 0, -32)
