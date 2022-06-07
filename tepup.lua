@@ -1718,7 +1718,8 @@ spawn(function()
 		local colorrr = Color3.fromHSV(hue, 1, 1)
 		DeathReturn.BackgroundColor3 = colorrr
 		if deathreturnactive == false then
-			break				
+			break
+			DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 		end
 	end
 end)
