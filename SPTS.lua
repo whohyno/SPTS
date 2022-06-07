@@ -442,7 +442,7 @@ Logo.Parent = MainGUI
 Logo.BackgroundColor3 = Color3.new(1, 1, 1)
 Logo.BackgroundTransparency = 1
 Logo.Position = UDim2.new(0, 5, 0, 5)
-Logo.Size = UDim2.new(0, 50, 0, 50)
+Logo.Size = UDim2.new(0, 75, 0, 75)
 Logo.Image = "rbxassetid://9846482909"
 Logo.ZIndex = 1
 
@@ -1344,6 +1344,16 @@ function converttoletter(num)
 		return round(newnum, 6).. "K"
 	else return num
 	end
+end
+
+--- Rainbow ---
+
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+counter = 0
+
+while wait(0.1) do
+ Logo.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
+ counter = counter + 0.01
 end
 
 --- NoClip ---
