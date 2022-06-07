@@ -1733,8 +1733,6 @@ spawn(function()
 	end
 end)
 					
-end
-
 spawn(function()
 	while true do
 		if deathreturnactive then
