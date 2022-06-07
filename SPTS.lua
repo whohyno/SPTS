@@ -444,7 +444,7 @@ Logo.BackgroundTransparency = 1
 Logo.Position = UDim2.new(0, 5, 0, 5)
 Logo.Size = UDim2.new(0, 75, 0, 75)
 Logo.Image = "rbxassetid://9846436847"
-Logo.ImageColor3 = colorrr
+Logo.ImageColor3 = Color3.new(1, 1, 1)
 Logo.ZIndex = 1
 
 ShowLocation.Name = "ShowLocation"
