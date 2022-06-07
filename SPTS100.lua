@@ -363,7 +363,7 @@ Open.TextWrapped = true
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = MainGUI
 MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-MainFrame.BackgroundTransparency = 0.5
+MainFrame.BackgroundTransparency = 0.2
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.5, -382.5, 0, -32)
 MainFrame.Size = UDim2.new(0, 765, 0, 30)
@@ -487,9 +487,9 @@ Location1.TextSize = 16
 
 LocationFS1B.Name = "LocationFS1B"
 LocationFS1B.Parent = WayPointsFrame
-LocationFS1B.BackgroundColor3 = Color3.new(70/255, 105/255, 0)
+LocationFS1B.BackgroundColor3 = Color3.fromRGB(255, 62, 0)
 LocationFS1B.TextColor3 = Color3.new(1, 1, 1)
-LocationFS1B.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationFS1B.BorderColor3 = Color3.new(0, 0, 0)
 LocationFS1B.Position = UDim2.new(0, 5, 0, 55)
 LocationFS1B.Size = UDim2.new(0, 365, 0, 20)
 LocationFS1B.Font = Enum.Font.Fantasy
@@ -499,9 +499,9 @@ LocationFS1B.TextSize = 16
 
 LocationFS100B.Name = "LocationFS100B"
 LocationFS100B.Parent = WayPointsFrame
-LocationFS100B.BackgroundColor3 = Color3.new(70/255, 105/255, 0)
+LocationFS100B.BackgroundColor3 = Color3.fromRGB(255, 62, 0)
 LocationFS100B.TextColor3 = Color3.new(1, 1, 1)
-LocationFS100B.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationFS100B.BorderColor3 = Color3.new(0, 0, 0)
 LocationFS100B.Position = UDim2.new(0, 5, 0, 80)
 LocationFS100B.Size = UDim2.new(0, 365, 0, 20)
 LocationFS100B.Font = Enum.Font.Fantasy
@@ -511,9 +511,9 @@ LocationFS100B.TextSize = 16
 
 LocationFS10T.Name = "LocationFS10T"
 LocationFS10T.Parent = WayPointsFrame
-LocationFS10T.BackgroundColor3 = Color3.new(70/255, 105/255, 0)
+LocationFS10T.BackgroundColor3 = Color3.fromRGB(255, 62, 0)
 LocationFS10T.TextColor3 = Color3.new(1, 1, 1)
-LocationFS10T.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationFS10T.BorderColor3 = Color3.new(0, 0, 0)
 LocationFS10T.Position = UDim2.new(0, 5, 0, 105)
 LocationFS10T.Size = UDim2.new(0, 365, 0, 20)
 LocationFS10T.Font = Enum.Font.Fantasy
@@ -523,9 +523,9 @@ LocationFS10T.TextSize = 16
 
 LocationBT1B.Name = "LocationBT1B"
 LocationBT1B.Parent = WayPointsFrame
-LocationBT1B.BackgroundColor3 = Color3.new(66/255, 0, 165/255)
+LocationBT1B.BackgroundColor3 = Color3.fromRGB(252, 93, 61)
 LocationBT1B.TextColor3 = Color3.new(1, 1, 1)
-LocationBT1B.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationBT1B.BorderColor3 = Color3.new(0, 0, 0)
 LocationBT1B.Position = UDim2.new(0, 5, 0, 130)
 LocationBT1B.Size = UDim2.new(0, 365, 0, 20)
 LocationBT1B.Font = Enum.Font.Fantasy
@@ -535,9 +535,9 @@ LocationBT1B.TextSize = 16
 
 LocationBT100B.Name = "LocationBT100B"
 LocationBT100B.Parent = WayPointsFrame
-LocationBT100B.BackgroundColor3 = Color3.new(66/255, 0, 165/255)
+LocationBT100B.BackgroundColor3 = Color3.fromRGB(252, 93, 61)
 LocationBT100B.TextColor3 = Color3.new(1, 1, 1)
-LocationBT100B.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationBT100B.BorderColor3 = Color3.new(0, 0, 0)
 LocationBT100B.Position = UDim2.new(0, 5, 0, 155)
 LocationBT100B.Size = UDim2.new(0, 365, 0, 20)
 LocationBT100B.Font = Enum.Font.Fantasy
@@ -547,9 +547,9 @@ LocationBT100B.TextSize = 16
 
 LocationBT10T.Name = "LocationBT10T"
 LocationBT10T.Parent = WayPointsFrame
-LocationBT10T.BackgroundColor3 = Color3.new(66/255, 0, 165/255)
+LocationBT10T.BackgroundColor3 = Color3.fromRGB(252, 93, 61)
 LocationBT10T.TextColor3 = Color3.new(1, 1, 1)
-LocationBT10T.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationBT10T.BorderColor3 = Color3.new(0, 0, 0)
 LocationBT10T.Position = UDim2.new(0, 5, 0, 180)
 LocationBT10T.Size = UDim2.new(0, 365, 0, 20)
 LocationBT10T.Font = Enum.Font.Fantasy
@@ -559,9 +559,9 @@ LocationBT10T.TextSize = 16
 
 LocationPP1M.Name = "LocationPP1M"
 LocationPP1M.Parent = WayPointsFrame
-LocationPP1M.BackgroundColor3 = Color3.new(195/255, 0, 39/255)
+LocationPP1M.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
 LocationPP1M.TextColor3 = Color3.new(1, 1, 1)
-LocationPP1M.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationPP1M.BorderColor3 = Color3.new(0, 0, 0)
 LocationPP1M.Position = UDim2.new(0, 5, 0, 205)
 LocationPP1M.Size = UDim2.new(0, 365, 0, 20)
 LocationPP1M.Font = Enum.Font.Fantasy
@@ -571,9 +571,9 @@ LocationPP1M.TextSize = 16
 
 LocationPP1B.Name = "LocationPP1B"
 LocationPP1B.Parent = WayPointsFrame
-LocationPP1B.BackgroundColor3 = Color3.new(195/255, 0, 39/255)
+LocationPP1B.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
 LocationPP1B.TextColor3 = Color3.new(1, 1, 1)
-LocationPP1B.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationPP1B.BorderColor3 = Color3.new(0, 0, 0)
 LocationPP1B.Position = UDim2.new(0, 5, 0, 230)
 LocationPP1B.Size = UDim2.new(0, 365, 0, 20)
 LocationPP1B.Font = Enum.Font.Fantasy
@@ -583,9 +583,9 @@ LocationPP1B.TextSize = 16
 
 LocationPP1T.Name = "LocationPP1T"
 LocationPP1T.Parent = WayPointsFrame
-LocationPP1T.BackgroundColor3 = Color3.new(195/255, 0, 39/255)
+LocationPP1T.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
 LocationPP1T.TextColor3 = Color3.new(1, 1, 1)
-LocationPP1T.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationPP1T.BorderColor3 = Color3.new(0, 0, 0)
 LocationPP1T.Position = UDim2.new(0, 5, 0, 255)
 LocationPP1T.Size = UDim2.new(0, 365, 0, 20)
 LocationPP1T.Font = Enum.Font.Fantasy
@@ -595,9 +595,9 @@ LocationPP1T.TextSize = 16
 
 LocationPP1Qa.Name = "LocationPP1Qa"
 LocationPP1Qa.Parent = WayPointsFrame
-LocationPP1Qa.BackgroundColor3 = Color3.new(195/255, 0, 39/255)
+LocationPP1Qa.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
 LocationPP1Qa.TextColor3 = Color3.new(1, 1, 1)
-LocationPP1Qa.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+LocationPP1Qa.BorderColor3 = Color3.new(0, 0, 0)
 LocationPP1Qa.Position = UDim2.new(0, 5, 0, 280)
 LocationPP1Qa.Size = UDim2.new(0, 365, 0, 20)
 LocationPP1Qa.Font = Enum.Font.Fantasy
@@ -717,11 +717,11 @@ DeathReturn.TextWrapped = true
 
 esptrack.Name = "esptrack"
 esptrack.Parent = MainFrame
-esptrack.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
-esptrack.BorderColor3 = Color3.new(1, 1, 1)
+esptrack.BackgroundColor3 = Color3.new(1, 1, 1)
+esptrack.BorderColor3 = Color3.new(0, 0, 0)
 esptrack.Position = UDim2.new(0, 375, 0, 5)
 esptrack.Size = UDim2.new(0, 35, 0, 20)
-esptrack.TextColor3 = Color3.new(1, 1, 1)
+esptrack.TextColor3 = Color3.new(0, 0, 0)
 esptrack.Font = Enum.Font.Fantasy
 esptrack.Text = "ESP"
 esptrack.TextSize = 16
@@ -979,11 +979,11 @@ ShowStatsPsychic2.TextXAlignment = Enum.TextXAlignment.Right
 
 Extras.Name = "Extras"
 Extras.Parent = MainFrame
-Extras.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-Extras.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+Extras.BackgroundColor3 = Color3.new(1, 1, 1)
+Extras.BorderColor3 = Color3.new(0, 0, 0)
 Extras.Position = UDim2.new(0, 505, 0, 5)
 Extras.Size = UDim2.new(0, 50, 0, 20)
-Extras.TextColor3 = Color3.new(1, 1, 1)
+Extras.TextColor3 = Color3.new(0, 0, 0)
 Extras.Font = Enum.Font.Fantasy
 Extras.Text = "Extras"
 Extras.TextSize = 16
@@ -1851,7 +1851,7 @@ esptrack.MouseButton1Click:connect(function()
 			end
 		end
 	else
-		esptrack.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		esptrack.BackgroundColor3 = Color3.new(1, 1, 1)
 		for _, v in next, Plrs:GetPlayers() do
 			RemoveESP(v)
 		end
