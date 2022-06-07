@@ -438,15 +438,12 @@ FarmExpFrame.Position = UDim2.new(0, 62.5, 0, 33)
 FarmExpFrame.Size = UDim2.new(0, 210, 0, 165)
 FarmExpFrame.Visible = false
 
-Logo.Name = "Logo"
 Logo.Parent = MainGUI
 Logo.BackgroundColor3 = Color3.new(1, 1, 1)
-Logo.BackgroundTransparency = 0.5
+Logo.BackgroundTransparency = 1
 Logo.Position = UDim2.new(0, 5, 0, 5)
 Logo.Size = UDim2.new(0, 75, 0, 75)
 Logo.Image = "rbxassetid://1437198076"
-Logo.ImageColor3 = Color3.new(1, 1, 1)
-Logo.ImageTransparency = 0.5
 Logo.ZIndex = 1
 
 ShowLocation.Name = "ShowLocation"
