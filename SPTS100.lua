@@ -750,7 +750,7 @@ PlayerInfoFrame.Visible = false
 
 ShowTopPlayers.Name = "ShowTopPlayers"
 ShowTopPlayers.Parent = PlayerInfoFrame
-ShowTopPlayers.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+ShowTopPlayers.BackgroundColor3 = Color3.new(1, 1, 1)
 ShowTopPlayers.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
 ShowTopPlayers.Position = UDim2.new(0, 5, 0, 5)
 ShowTopPlayers.Size = UDim2.new(0, 150, 0, 20)
@@ -1487,9 +1487,9 @@ FarmAll.MouseButton1Click:Connect(function()
 		farmspeedactive = true
 		farmpsychicactive = true
 		farmjumpactive = true
-		FarmAll.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmAll.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmAll.Text = "Farm All: ON"
-		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmallactive = false
 		farmfistactive = false
