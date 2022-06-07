@@ -440,7 +440,7 @@ FarmExpFrame.Visible = false
 
 Logo.Name = "Logo"
 Logo.Parent = MainGUI
-Logo.BackgroundTransparency = 1
+Logo.BackgroundTransparency = 0
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0, 944, 0, 898)
 Logo.Size = UDim2.new(0, 75, 0, 75)
