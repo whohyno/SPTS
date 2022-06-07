@@ -92,7 +92,7 @@ function CreateESP(plr)
 		TxtName.ZIndex = 10
 		TxtName.Text = plr.Name
 		TxtName.BackgroundTransparency = 1
-		TxtName.Position = UDim2.new(0, 0, 0, -51)
+		TxtName.Position = UDim2.new(0, 0, 0, -60)
 		TxtName.Size = UDim2.new(1, 0, 10, 0)
 		TxtName.Font = "SourceSansBold"
 		TxtName.TextColor3 = Color3.new(0, 0, 0)
@@ -104,7 +104,7 @@ function CreateESP(plr)
 		TxtDist.ZIndex = 10
 		TxtDist.Text = ""
 		TxtDist.BackgroundTransparency = 1
-		TxtDist.Position = UDim2.new(0, 0, 0, -41)
+		TxtDist.Position = UDim2.new(0, 0, 0, -50)
 		TxtDist.Size = UDim2.new(1, 0, 10, 0)
 		TxtDist.Font = "SourceSansBold"
 		TxtDist.TextColor3 = Color3.new(0, 0, 0)
@@ -116,7 +116,7 @@ function CreateESP(plr)
 		TxtHealth.ZIndex = 10
 		TxtHealth.Text = ""
 		TxtHealth.BackgroundTransparency = 1
-		TxtHealth.Position = UDim2.new(0, 0, 0, -31)
+		TxtHealth.Position = UDim2.new(0, 0, 0, -40)
 		TxtHealth.Size = UDim2.new(1, 0, 10, 0)
 		TxtHealth.Font = "SourceSansBold"
 		TxtHealth.TextColor3 = Color3.new(0, 0, 0)
@@ -128,7 +128,7 @@ function CreateESP(plr)
 		TxtFist.ZIndex = 10
 		TxtFist.Text = ""
 		TxtFist.BackgroundTransparency = 1
-		TxtFist.Position = UDim2.new(0, 0, 0, -21)
+		TxtFist.Position = UDim2.new(0, 0, 0, -30)
 		TxtFist.Size = UDim2.new(1, 0, 10, 0)
 		TxtFist.Font = "SourceSansBold"
 		TxtFist.TextColor3 = Color3.new(0, 0, 0)
@@ -140,7 +140,7 @@ function CreateESP(plr)
 		TxtBody.ZIndex = 10
 		TxtBody.Text = ""
 		TxtBody.BackgroundTransparency = 1
-		TxtBody.Position = UDim2.new(0, 0, 0, -11)
+		TxtBody.Position = UDim2.new(0, 0, 0, -20)
 		TxtBody.Size = UDim2.new(1, 0, 10, 0)
 		TxtBody.Font = "SourceSansBold"
 		TxtBody.TextColor3 = Color3.new(0, 0, 0)
@@ -152,7 +152,7 @@ function CreateESP(plr)
 		TxtPsychic.ZIndex = 10
 		TxtPsychic.Text = ""
 		TxtPsychic.BackgroundTransparency = 1
-		TxtPsychic.Position = UDim2.new(0, 0, 0, -1)
+		TxtPsychic.Position = UDim2.new(0, 0, 0, -10)
 		TxtPsychic.Size = UDim2.new(1, 0, 10, 0)
 		TxtPsychic.Font = "SourceSansBold"
 		TxtPsychic.TextColor3 = Color3.new(0, 0, 0)
