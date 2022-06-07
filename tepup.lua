@@ -411,7 +411,7 @@ WayPointsFrame.Name = "WayPointsFrame"
 WayPointsFrame.Parent = MainFrame
 WayPointsFrame.BackgroundColor3 = Color3.new(1, 1, 1)
 WayPointsFrame.BorderColor3 = Color3.new(0, 0, 0)
-WayPointsFrame.BackgroundTransparency = 0.2
+WayPointsFrame.BackgroundTransparency = 0.5
 WayPointsFrame.Position = UDim2.new(0, 1, 0, 33)
 WayPointsFrame.Size = UDim2.new(0, 375, 0, 305)
 WayPointsFrame.Visible = false
@@ -717,7 +717,7 @@ DeathReturn.TextWrapped = true
 
 esptrack.Name = "esptrack"
 esptrack.Parent = MainFrame
-esptrack.BackgroundColor3 = Color3.fromRGB(26, 243, 255)
+esptrack.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 esptrack.BorderColor3 = Color3.new(1, 1, 1)
 esptrack.Position = UDim2.new(0, 375, 0, 5)
 esptrack.Size = UDim2.new(0, 35, 0, 20)
@@ -1147,12 +1147,12 @@ InfoScreen.TextWrapped = true
 
 InfoText1.Name = "InfoText1"
 InfoText1.Parent = MainFrame
-InfoText1.BackgroundColor3 = Color3.new(0, 0, 0)
-InfoText1.BorderColor3 = Color3.new(1, 1, 1)
+InfoText1.BackgroundColor3 = Color3.new(1, 1, 1)
+InfoText1.BorderColor3 = Color3.new(0, 0, 0)
 InfoText1.BackgroundTransparency = 0
 InfoText1.Position = UDim2.new(0, 405, 0, 32)
 InfoText1.Size = UDim2.new(0, 141, 0, 18)
-InfoText1.TextColor3 = Color3.new(1, 1, 1)
+InfoText1.TextColor3 = Color3.new(0, 0, 0)
 InfoText1.Font = Enum.Font.Fantasy
 InfoText1.Text = "GUI = franq1337#0980"
 InfoText1.TextSize = 15
@@ -1584,19 +1584,19 @@ spawn(function()
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-369, 15735, -9)
 				fistarguments = {"+FS6"}
 				farmpsychicactive = false
-				FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmPsychic.Text = "Farm Psychic Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.FistStrength.Value)) >= 100e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1381, 9274, 1647)
 				fistarguments = {"+FS5"}
 				farmpsychicactive = false
-				FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmPsychic.Text = "Farm Psychic Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.FistStrength.Value)) >= 1e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1176, 4789, -2293)
 				fistarguments = {"+FS4"}
 				farmpsychicactive = false
-				FarmPsychic.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmPsychic.Text = "Farm Psychic Strength: OFF"
 			else
 				fistarguments = {"+FS3", "+FS2", "+FS1"}
@@ -1670,25 +1670,25 @@ spawn(function()
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2544, 5412, -495)
 				psychicarguments = {"+PP6"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.PsychicPower.Value)) >= 1e12 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2582, 5516, -504)
 				psychicarguments = {"+PP5"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.PsychicPower.Value)) >= 1e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2560, 5500, -439)
 				psychicarguments = {"+PP4"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.PsychicPower.Value)) >= 1e06 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2527, 5486, -532)
 				psychicarguments = {"+PP3"}
 				farmfistactive = false
-				FarmFist.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+				FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
 				FarmFist.Text = "Farm Fist Strength: OFF"
 			else
 				psychicarguments = {"+PP2", "+PP1"}
@@ -1851,7 +1851,7 @@ esptrack.MouseButton1Click:connect(function()
 			end
 		end
 	else
-		esptrack.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+		esptrack.BackgroundColor3 = Color3.new(1, 1, 1)
 		for _, v in next, Plrs:GetPlayers() do
 			RemoveESP(v)
 		end
