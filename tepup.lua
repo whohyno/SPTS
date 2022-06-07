@@ -1705,10 +1705,11 @@ spawn(function()
 end)
 
 -- Return to position on Death --
+
 DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
-		DeathReturn.BackgroundColor3 = Color3.New(0, 0.5, 0)
+		DeathReturn.BackgroundColor3 = Color3.new(0, 0.5, 0)
 		DeathReturn.Text = "OnDeath Return: ON"
 	else
 		deathreturnactive = false
@@ -1716,7 +1717,7 @@ DeathReturn.MouseButton1Click:Connect(function()
 		DeathReturn.Text = "OnDeath Return: OFF"
 	end
 end)
-					
+
 spawn(function()
 	while true do
 		if deathreturnactive then
