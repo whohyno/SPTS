@@ -1340,16 +1340,6 @@ function converttoletter(num)
 	end
 end
 
---- Rainbow ---
-
-function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
-counter = 0
-
-while wait(0.1) do
- Logo.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
- counter = counter + 0.05
-end
-
 --- NoClip ---
 
 NoClip.MouseButton1Down:connect(function()
