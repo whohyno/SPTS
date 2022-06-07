@@ -1179,7 +1179,6 @@ PlayerName.TextWrapped = false
 StatsFrame.Name = "StatsFrame"
 StatsFrame.Parent = MainFrame
 StatsFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-StatsFrame.BorderColor3 = Color3.new(0, 0, 0)
 StatsFrame.BackgroundTransparency = 0.2
 StatsFrame.Position = UDim2.new(0, 600, 0, 33)
 StatsFrame.Size = UDim2.new(0, 161, 0, 90)
