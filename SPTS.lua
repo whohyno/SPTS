@@ -331,6 +331,7 @@ local ShowStats2 = Instance.new("TextLabel")
 local StatNameSet = Instance.new("TextButton")
 local NoClip = Instance.new("TextButton")
 local GodMode = Instance.new("TextButton")
+local Logo = Instance.new("ImageLabel")
 
 -- Properties
 
@@ -436,6 +437,16 @@ FarmExpFrame.BackgroundTransparency = 0.2
 FarmExpFrame.Position = UDim2.new(0, 62.5, 0, 33)
 FarmExpFrame.Size = UDim2.new(0, 210, 0, 165)
 FarmExpFrame.Visible = false
+
+Logo.Name = "Logo"
+Logo.Parent = MainFrame
+Logo.BackgroundTransparency = 1
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0, 125, 0, 127)
+Logo.Size = UDim2.new(0, 10, 0, 10)
+Logo.Image = "rbxassetid://9846436903"
+Logo.ImageTransparency = 0
+Logo.ZIndex = 10
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
