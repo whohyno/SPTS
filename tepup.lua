@@ -1722,13 +1722,7 @@ end)
 	else
 		deathreturnactive = false
 		DeathReturn.Text = "OnDeath Return: OFF"
-				
-spawn(function()
-	while task.wait() do
-		if deathreturnactive ~= false then
 		DeathReturn.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-	end
-end)
 	end
 end)
 					
