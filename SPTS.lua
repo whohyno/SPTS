@@ -614,7 +614,7 @@ ColorPicker.TextColor3 = Color3.fromRGB(255, 255, 255)
 ColorPicker.TextSize = 20.000
 
 Logo.Name = "Logo"
-Logo.Parent = ColourWheelGui
+Logo.Parent = MainGUI
 Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Logo.BackgroundTransparency = 1.000
 Logo.Position = UDim2.new(0.90842557, 0, 0.932606876, 0)
@@ -2015,7 +2015,7 @@ local function PYGBT_fake_script() -- Logo.Script
 	local script = Instance.new('Script', Logo)
 
 	while task.wait() do
-		script.Parent.ImageColor3 = Color3.fromHSV(tick()%5/5,1,1)
+		Logo.ImageColor3 = Color3.fromHSV(tick()%5/5,1,1)
 	end
 end
 coroutine.wrap(PYGBT_fake_script)()
@@ -2023,12 +2023,12 @@ local function ENNKH_fake_script() -- Logo.LocalScript
 	local script = Instance.new('LocalScript', Logo)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if not script.Parent.Parent.WheelFrame.Visible then
-			script.Parent.Parent.WheelFrame.Visible = true
-			script.Parent.Parent.Top2Frame.Visible = true
+		if not WheelFrame.Visible then
+			WheelFrame.Visible = true
+			sTop2Frame.Visible = true
 		else
-			script.Parent.Parent.WheelFrame.Visible = false
-			script.Parent.Parent.Top2Frame.Visible = false
+			WheelFrame.Visible = false
+			Top2Frame.Visible = false
 		end
 	end)
 end
