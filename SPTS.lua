@@ -2025,7 +2025,7 @@ local function ENNKH_fake_script() -- Logo.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		if not WheelFrame.Visible then
 			WheelFrame.Visible = true
-			sTop2Frame.Visible = true
+			Top2Frame.Visible = true
 		else
 			WheelFrame.Visible = false
 			Top2Frame.Visible = false
