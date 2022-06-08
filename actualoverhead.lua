@@ -1,9 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local OverheadGUI = Instance.new("ScreenGui")
+local Work = Instance.new("Workspace")
 local GUI = Instance.new("BillboardGui")
 local Frame = Instance.new("Frame")
 local Rank = Instance.new("TextLabel")
@@ -18,12 +13,8 @@ local VIP = Instance.new("ImageLabel")
 
 --Properties:
 
-OverheadGUI.Name = "OverheadGUI"
-OverheadGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-OverheadGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 GUI.Name = "GUI"
-GUI.Parent = game.StarterGui.OverheadGUI.Overhead System
+GUI.Parent = game.Workspace.OverheadSystem
 GUI.Active = true
 GUI.Size = UDim2.new(4, 0, 1.79999995, 0)
 GUI.StudsOffset = Vector3.new(0, 2, 0)
@@ -141,7 +132,7 @@ VIP.ScaleType = Enum.ScaleType.Fit
 
 -- Scripts:
 
-local function CWDKIT_fake_script() -- OverheadGUI.Overhead System 
+local function CWDKIT_fake_script() -- OverheadGUI.OverheadSystem 
 	local script = Instance.new('Script', OverheadGUI)
 
 	GroupID = 0 
