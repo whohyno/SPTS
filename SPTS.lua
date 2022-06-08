@@ -351,9 +351,8 @@ local UICorner_2 = Instance.new("UICorner")
 local Close2 = Instance.new("ImageButton")
 local ColorPicker = Instance.new("TextLabel")
 local Logo = Instance.new("ImageButton")
-local ForDeath = Instance.new("ScreenGui")
 local DeathGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local FrameD = Instance.new("Frame")
 
 -- Properties
 
@@ -630,14 +629,10 @@ ForDeath.Name = "ForDeath"
 ForDeath.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ForDeath.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-DeathGui.Name = "DeathGui"
-DeathGui.Parent = game.StarterGui.ForDeath.Static Death.RestoreEffects
-DeathGui.Enabled = false
-
-Frame.Parent = DeathGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.Position = UDim2.new(0, 0, 0, -100)
-Frame.Size = UDim2.new(0, 4000, 0, 4000)
+FrameD.Parent = DeathGui
+FrameD.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FrameD.Position = UDim2.new(0, 0, 0, -100)
+FrameD.Size = UDim2.new(0, 4000, 0, 4000)
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
