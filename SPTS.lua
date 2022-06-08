@@ -232,7 +232,6 @@ end
 local MainGUI = Instance.new("ScreenGui")
 local TopFrame = Instance.new("Frame")
 local MainFrame = Instance.new("Frame")
-local Logo = Instance.new("ImageLabel")
 local Open = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
 local Minimize = Instance.new("TextButton")
