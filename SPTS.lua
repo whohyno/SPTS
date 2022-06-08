@@ -232,7 +232,6 @@ end
 local MainGUI = Instance.new("ScreenGui")
 local TopFrame = Instance.new("Frame")
 local MainFrame = Instance.new("Frame")
-local Logo = Instance.new("ImageLabel")
 local Open = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
 local Minimize = Instance.new("TextButton")
@@ -332,6 +331,26 @@ local ShowStats2 = Instance.new("TextLabel")
 local StatNameSet = Instance.new("TextButton")
 local NoClip = Instance.new("TextButton")
 local GodMode = Instance.new("TextButton")
+local ColourWheelGui = Instance.new("ScreenGui")
+local WheelFrame = Instance.new("Frame")
+local ColourWheel = Instance.new("ImageButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Picker = Instance.new("ImageLabel")
+local DarknessPicker = Instance.new("ImageButton")
+local UIGradient = Instance.new("UIGradient")
+local Slider = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UICorner = Instance.new("UICorner")
+local Shadow = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local ColourDisplay = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local GUI = Instance.new("TextLabel")
+local Top2Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Close2 = Instance.new("ImageButton")
+local ColorPicker = Instance.new("TextLabel")
+local Logo = Instance.new("ImageButton")
 
 -- Properties
 
@@ -438,13 +457,171 @@ FarmExpFrame.Position = UDim2.new(0, 62.5, 0, 33)
 FarmExpFrame.Size = UDim2.new(0, 210, 0, 165)
 FarmExpFrame.Visible = false
 
-Logo.Parent = MainGUI
-Logo.BackgroundColor3 = Color3.new(1, 1, 1)
-Logo.BackgroundTransparency = 1
-Logo.Position = UDim2.new(0, 1700, 0, 899)
-Logo.Size = UDim2.new(0, 75, 0, 75)
+ColourWheelGui.Name = "ColourWheelGui"
+ColourWheelGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ColourWheelGui.ResetOnSpawn = false
+
+WheelFrame.Name = "WheelFrame"
+WheelFrame.Parent = ColourWheelGui
+WheelFrame.Active = true
+WheelFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WheelFrame.BorderColor3 = Color3.fromRGB(42, 42, 42)
+WheelFrame.Position = UDim2.new(0.307749629, 0, 0.397545993, 0)
+WheelFrame.Size = UDim2.new(0, 532, 0, 240)
+WheelFrame.Visible = false
+
+ColourWheel.Name = "ColourWheel"
+ColourWheel.Parent = WheelFrame
+ColourWheel.Active = false
+ColourWheel.AnchorPoint = Vector2.new(0.5, 0.5)
+ColourWheel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColourWheel.BackgroundTransparency = 1.000
+ColourWheel.BorderSizePixel = 0
+ColourWheel.Position = UDim2.new(0.327675372, 0, 0.515904486, 0)
+ColourWheel.Selectable = false
+ColourWheel.Size = UDim2.new(0.272253096, 0, 0.532861412, 0)
+ColourWheel.Image = "http://www.roblox.com/asset/?id=6020299385"
+
+UIAspectRatioConstraint.Parent = ColourWheel
+UIAspectRatioConstraint.AspectRatio = 1.000
+
+Picker.Name = "Picker"
+Picker.Parent = ColourWheel
+Picker.AnchorPoint = Vector2.new(0.5, 0.5)
+Picker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Picker.BackgroundTransparency = 1.000
+Picker.BorderSizePixel = 0
+Picker.Position = UDim2.new(0.5, 0, 0.5, 0)
+Picker.Size = UDim2.new(0.0900257826, 0, 0.0900257975, 0)
+Picker.Image = "http://www.roblox.com/asset/?id=3678860011"
+
+DarknessPicker.Name = "DarknessPicker"
+DarknessPicker.Parent = WheelFrame
+DarknessPicker.Active = false
+DarknessPicker.AnchorPoint = Vector2.new(0.5, 0.5)
+DarknessPicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarknessPicker.BackgroundTransparency = 1.000
+DarknessPicker.BorderSizePixel = 0
+DarknessPicker.Position = UDim2.new(0.499914944, 0, 0.495833337, 0)
+DarknessPicker.Selectable = false
+DarknessPicker.Size = UDim2.new(0.0478173457, 0, 0.592719018, 0)
+DarknessPicker.ZIndex = 2
+DarknessPicker.Image = "rbxassetid://3570695787"
+DarknessPicker.ScaleType = Enum.ScaleType.Slice
+DarknessPicker.SliceCenter = Rect.new(100, 100, 100, 100)
+DarknessPicker.SliceScale = 0.120
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Rotation = 90
+UIGradient.Parent = DarknessPicker
+
+Slider.Name = "Slider"
+Slider.Parent = DarknessPicker
+Slider.AnchorPoint = Vector2.new(0.5, 0.5)
+Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Slider.BackgroundTransparency = 1.000
+Slider.BorderSizePixel = 0
+Slider.Position = UDim2.new(0.491197795, 0, 0.0733607039, 0)
+Slider.Size = UDim2.new(1.28656352, 0, 0.0265010502, 0)
+Slider.ZIndex = 2
+Slider.Image = "rbxassetid://3570695787"
+Slider.ImageColor3 = Color3.fromRGB(255, 74, 74)
+Slider.ScaleType = Enum.ScaleType.Slice
+Slider.SliceCenter = Rect.new(100, 100, 100, 100)
+Slider.SliceScale = 0.120
+
+UIAspectRatioConstraint_2.Parent = DarknessPicker
+UIAspectRatioConstraint_2.AspectRatio = 0.157
+
+UICorner.Parent = WheelFrame
+
+Shadow.Name = "Shadow"
+Shadow.Parent = WheelFrame
+Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.BackgroundTransparency = 1.000
+Shadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(0.561739802, 0, 0.250809997, 0)
+Shadow.Size = UDim2.new(0.225215167, 0, 0.50339359, 0)
+Shadow.Image = "rbxassetid://3570695787"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(100, 100, 100, 100)
+Shadow.SliceScale = 0.120
+
+UIAspectRatioConstraint_3.Parent = Shadow
+
+ColourDisplay.Name = "ColourDisplay"
+ColourDisplay.Parent = WheelFrame
+ColourDisplay.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ColourDisplay.BackgroundTransparency = 1.000
+ColourDisplay.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ColourDisplay.BorderSizePixel = 0
+ColourDisplay.Position = UDim2.new(0.573018014, 0, 0.274473846, 0)
+ColourDisplay.Size = UDim2.new(0.203299224, 0, 0.450563103, 0)
+ColourDisplay.ZIndex = 4
+ColourDisplay.Image = "rbxassetid://3570695787"
+ColourDisplay.ScaleType = Enum.ScaleType.Slice
+ColourDisplay.SliceCenter = Rect.new(100, 100, 100, 100)
+ColourDisplay.SliceScale = 0.120
+
+UIAspectRatioConstraint_4.Parent = ColourDisplay
+
+GUI.Name = "GUI"
+GUI.Parent = WheelFrame
+GUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI.BackgroundTransparency = 1.000
+GUI.BorderSizePixel = 0
+GUI.Position = UDim2.new(0.428120315, 0, 0.0500000007, 0)
+GUI.Size = UDim2.new(0, 75, 0, 47)
+GUI.Font = Enum.Font.Ubuntu
+GUI.Text = "GUI"
+GUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUI.TextSize = 20.000
+GUI.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+GUI.TextStrokeTransparency = 0.000
+
+Top2Frame.Name = "Top2Frame"
+Top2Frame.Parent = ColourWheelGui
+Top2Frame.Active = true
+Top2Frame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Top2Frame.Position = UDim2.new(0.307749629, 0, 0.360736191, 0)
+Top2Frame.Size = UDim2.new(0, 532, 0, 29)
+Top2Frame.Visible = false
+
+UICorner_2.Parent = Top2Frame
+
+Close2.Name = "Close2"
+Close2.Parent = Top2Frame
+Close2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close2.BackgroundTransparency = 1.000
+Close2.Position = UDim2.new(0.962406039, 0, 0.310344815, 0)
+Close2.Size = UDim2.new(0, 10, 0, 10)
+Close2.ZIndex = 2
+Close2.Image = "rbxassetid://5054663650"
+Close2.ScaleType = Enum.ScaleType.Crop
+
+ColorPicker.Name = "Color Picker"
+ColorPicker.Parent = Top2Frame
+ColorPicker.Active = true
+ColorPicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColorPicker.BackgroundTransparency = 1.000
+ColorPicker.Position = UDim2.new(0.396616548, 0, 0, 0)
+ColorPicker.Size = UDim2.new(0, 110, 0, 29)
+ColorPicker.ZIndex = 2
+ColorPicker.Font = Enum.Font.SourceSans
+ColorPicker.Text = "Color Picker"
+ColorPicker.TextColor3 = Color3.fromRGB(255, 255, 255)
+ColorPicker.TextSize = 20.000
+
+Logo.Name = "Logo"
+Logo.Parent = ColourWheelGui
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.924888253, 0, 0.90368098, 0)
+Logo.Size = UDim2.new(0, 100, 0, 100)
+Logo.Selected = true
 Logo.Image = "rbxassetid://9846482909"
-Logo.ZIndex = 1
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
@@ -1729,6 +1906,133 @@ spawn(function()
 		wait(1)
 	end
 end)
+-- GUI to LUA --
+
+local function FZPGXI_fake_script() -- WheelFrame.ColourWheelHandler 
+	local script = Instance.new('LocalScript', WheelFrame)
+
+	local colourWheel = script.Parent:WaitForChild("ColourWheel")
+	local wheelPicker = colourWheel:WaitForChild("Picker")
+	
+	local darknessPicker = script.Parent:WaitForChild("DarknessPicker")
+	local darknessSlider = darknessPicker:WaitForChild("Slider")
+	
+	local colourDisplay = script.Parent:WaitForChild("ColourDisplay")
+	
+	
+	local uis = game:GetService("UserInputService")
+	
+	
+	local buttonDown = false
+	local movingSlider = false
+	
+	
+	local function updateColour(centreOfWheel)
+		
+		
+		local colourPickerCentre = Vector2.new(
+			colourWheel.Picker.AbsolutePosition.X + (colourWheel.Picker.AbsoluteSize.X/2),
+			colourWheel.Picker.AbsolutePosition.Y + (colourWheel.Picker.AbsoluteSize.Y/2)
+		)
+		local h = (math.pi - math.atan2(colourPickerCentre.Y - centreOfWheel.Y, colourPickerCentre.X - centreOfWheel.X)) / (math.pi * 2)
+		
+		local s = (centreOfWheel - colourPickerCentre).Magnitude / (colourWheel.AbsoluteSize.X/2)
+		
+		local v = math.abs((darknessSlider.AbsolutePosition.Y - darknessPicker.AbsolutePosition.Y) / darknessPicker.AbsoluteSize.Y - 1)
+		
+		
+		local hsv = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
+		
+		
+		colourDisplay.ImageColor3 = hsv
+		darknessPicker.UIGradient.Color = ColorSequence.new{
+			ColorSequenceKeypoint.new(0, hsv), 
+			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
+		}
+	end
+	
+	
+	colourWheel.MouseButton1Down:Connect(function()
+		buttonDown = true
+	end)
+	
+	darknessPicker.MouseButton1Down:Connect(function()
+		movingSlider = true
+	end)
+	
+	
+	uis.InputEnded:Connect(function(input)
+		
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 then return end
+		
+		buttonDown = false
+		movingSlider = false
+	end)
+	
+	
+	uis.InputChanged:Connect(function(input)
+		
+		if input.UserInputType ~= Enum.UserInputType.MouseMovement then return end
+		
+		
+		local mousePos = uis:GetMouseLocation() - Vector2.new(0, game:GetService("GuiService"):GetGuiInset().Y)
+		
+		local centreOfWheel = Vector2.new(colourWheel.AbsolutePosition.X + (colourWheel.AbsoluteSize.X/2), colourWheel.AbsolutePosition.Y + (colourWheel.AbsoluteSize.Y/2))
+		
+		local distanceFromWheel = (mousePos - centreOfWheel).Magnitude
+		
+		
+		if distanceFromWheel <= colourWheel.AbsoluteSize.X/2 and buttonDown then
+			
+			wheelPicker.Position = UDim2.new(0, mousePos.X - colourWheel.AbsolutePosition.X, 0, mousePos.Y - colourWheel.AbsolutePosition.Y)
+	
+			
+		elseif movingSlider then
+			
+			darknessSlider.Position = UDim2.new(darknessSlider.Position.X.Scale, 0, 0, 
+				math.clamp(
+				mousePos.Y - darknessPicker.AbsolutePosition.Y, 
+				0, 
+				darknessPicker.AbsoluteSize.Y)
+			)	
+		end
+		
+		
+		updateColour(centreOfWheel)
+	end)
+end
+coroutine.wrap(FZPGXI_fake_script)()
+local function EISD_fake_script() -- Close2.LocalScript 
+	local script = Instance.new('LocalScript', Close2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Parent.Top2Frame.Visible = false
+			script.Parent.Parent.Parent.WheelFrame.Visible = false
+	end)
+end
+coroutine.wrap(EISD_fake_script)()
+local function EXQYSM_fake_script() -- Logo.Script 
+	local script = Instance.new('Script', Logo)
+
+	while task.wait() do
+		script.Parent.ImageColor3 = Color3.fromHSV(tick()%5/5,1,1)
+	end
+end
+coroutine.wrap(EXQYSM_fake_script)()
+local function LIJVVU_fake_script() -- Logo.LocalScript 
+	local script = Instance.new('LocalScript', Logo)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if not script.Parent.Parent.WheelFrame.Visible then
+			script.Parent.Parent.WheelFrame.Visible = true
+			script.Parent.Parent.Top2Frame.Visible = true
+		else
+			script.Parent.Parent.WheelFrame.Visible = false
+			script.Parent.Parent.Top2Frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(LIJVVU_fake_script)()
 
 -- Return to position on Death --
 
@@ -1883,7 +2187,6 @@ esptrack.MouseButton1Click:connect(function()
 		end
 	end
 end)
-
 -- Server Player Stats --
 
 PlayerInfo.MouseButton1Click:connect(function()
