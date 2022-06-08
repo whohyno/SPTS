@@ -1621,7 +1621,7 @@ NoClip.MouseButton1Down:connect(function()
 	noclip = not noclip
 	if noclip then
 		NoClip.Text = "NoClip Mode: ON"
-		NoClip.BackgroundColor3 = hsv
+		NoClip.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		NoClip.Text = "NoClip Mode: OFF"
 		NoClip.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1639,7 +1639,7 @@ farmbtsafety.MouseButton1Down:connect(function()
 	farmbtsafetyactive = not farmbtsafetyactive
 	if farmbtsafetyactive then
 		farmbtsafety.Text = "Safety Net: ON"
-		farmbtsafety.BackgroundColor3 = hsv
+		farmbtsafety.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmbtsafety.Text = "Safety Net: OFF"
 		farmbtsafety.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1787,9 +1787,9 @@ FarmAll.MouseButton1Click:Connect(function()
 		farmspeedactive = true
 		farmpsychicactive = true
 		farmjumpactive = true
-		FarmAll.BackgroundColor3 = hsv
+		FarmAll.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		FarmAll.Text = "Farm All: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmallactive = false
 		farmfistactive = false
@@ -1811,9 +1811,9 @@ end)
 FarmFist.MouseButton1Click:Connect(function()
 	if farmfistactive ~= true then
 		farmfistactive = true
-		FarmFist.BackgroundColor3 = hsv
+		FarmFist.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		FarmFist.Text = "Farm Fist Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmfistactive = false
 		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1825,9 +1825,9 @@ end)
 FarmBody.MouseButton1Click:Connect(function()
 	if farmbodyactive ~= true then
 		farmbodyactive = true
-		FarmBody.BackgroundColor3 = hsv
+		FarmBody.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		FarmBody.Text = "Farm Body Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmbodyactive = false
 		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1839,9 +1839,9 @@ end)
 FarmSpeed.MouseButton1Click:Connect(function()
 	if farmspeedactive ~= true then
 		farmspeedactive = true
-		FarmSpeed.BackgroundColor3 = hsv
+		FarmSpeed.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		FarmSpeed.Text = "Farm Speed Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmspeedactive = false
 		FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1853,9 +1853,9 @@ end)
 FarmJump.MouseButton1Click:Connect(function()
 	if farmjumpactive ~= true then
 		farmjumpactive = true
-		FarmJump.BackgroundColor3 = hsv
+		FarmJump.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		FarmJump.Text = "Farm Jump Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmjumpactive = false
 		FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1867,9 +1867,9 @@ end)
 FarmPsychic.MouseButton1Click:Connect(function()
 	if farmpsychicactive ~= true then
 		farmpsychicactive = true
-		FarmPsychic.BackgroundColor3 = hsv
+		FarmPsychic.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		FarmPsychic.Text = "Farm Psychic Power: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 	else
 		farmpsychicactive = false
 		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -2109,7 +2109,7 @@ end)
 AnnoyStart.MouseButton1Click:Connect(function()
 	if annoyplayeractive ~= true then
 		annoyplayeractive = true
-		AnnoyStart.BackgroundColor3 = hsv
+		AnnoyStart.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		AnnoyStart.Text = "TP Spam Player: ON"
 	else
 		annoyplayeractive = false
@@ -2169,7 +2169,7 @@ end)
 esptrack.MouseButton1Click:connect(function()
 	ESPEnabled = not ESPEnabled
 	if ESPEnabled then
-		esptrack.BackgroundColor3 = hsv
+		esptrack.BackgroundColor3 = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
 		for _, v in next, Plrs:GetPlayers() do
 			if v ~= MyPlr then
 				if CharAddedEvent[v.Name] == nil then
