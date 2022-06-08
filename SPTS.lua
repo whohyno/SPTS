@@ -461,7 +461,7 @@ FarmExpFrame.Visible = false
 
 ColourWheelGui.Name = "ColourWheelGui"
 ColourWheelGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ColourWheelGui.ResetOnSpawn = false
+ColourWheelGui.ResetOnSpawn = true
 
 WheelFrame.Name = "WheelFrame"
 WheelFrame.Parent = ColourWheelGui
@@ -470,6 +470,7 @@ WheelFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WheelFrame.BorderColor3 = Color3.fromRGB(42, 42, 42)
 WheelFrame.Position = UDim2.new(0.307749629, 0, 0.397545993, 0)
 WheelFrame.Size = UDim2.new(0.38803792, 0, 0.294478536, 0)
+WheelFrame.Visible = 1
 
 ColourWheel.Name = "ColourWheel"
 ColourWheel.Parent = WheelFrame
@@ -588,6 +589,7 @@ Top2Frame.Active = true
 Top2Frame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 Top2Frame.Position = UDim2.new(0.307749629, 0, 0.360736191, 0)
 Top2Frame.Size = UDim2.new(0.38803792, 0, 0.0355828218, 0)
+Top2Frame.Visible = false
 
 UICorner_2.Parent = Top2Frame
 
