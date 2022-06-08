@@ -1518,110 +1518,13 @@ function converttoletter(num)
 	end
 end
 
---- Colour Display ---
-
-local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler 
-	local script = Instance.new('LocalScript', WheelFrame)
-
-	local colourWheel = script.Parent:WaitForChild("ColourWheel")
-	local wheelPicker = colourWheel:WaitForChild("Picker")
-	
-	local darknessPicker = script.Parent:WaitForChild("DarknessPicker")
-	local darknessSlider = darknessPicker:WaitForChild("Slider")
-	
-	local colourDisplay = script.Parent:WaitForChild("ColourDisplay")
-	
-	
-	local uis = game:GetService("UserInputService")
-	
-	
-	local buttonDown = false
-	local movingSlider = false
-	
-	
-	local function updateColour(centreOfWheel)
-		
-		
-		local colourPickerCentre = Vector2.new(
-			colourWheel.Picker.AbsolutePosition.X + (colourWheel.Picker.AbsoluteSize.X/2),
-			colourWheel.Picker.AbsolutePosition.Y + (colourWheel.Picker.AbsoluteSize.Y/2)
-		)
-		local h = (math.pi - math.atan2(colourPickerCentre.Y - centreOfWheel.Y, colourPickerCentre.X - centreOfWheel.X)) / (math.pi * 2)
-		
-		local s = (centreOfWheel - colourPickerCentre).Magnitude / (colourWheel.AbsoluteSize.X/2)
-		
-		local v = math.abs((darknessSlider.AbsolutePosition.Y - darknessPicker.AbsolutePosition.Y) / darknessPicker.AbsoluteSize.Y - 1)
-		
-		
-		local hsv = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
-		
-		
-		colourDisplay.ImageColor3 = hsv
-		darknessPicker.UIGradient.Color = ColorSequence.new{
-			ColorSequenceKeypoint.new(0, hsv), 
-			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
-		}
-	end
-	
-	
-	colourWheel.MouseButton1Down:Connect(function()
-		buttonDown = true
-	end)
-	
-	darknessPicker.MouseButton1Down:Connect(function()
-		movingSlider = true
-	end)
-	
-	
-	uis.InputEnded:Connect(function(input)
-		
-		if input.UserInputType ~= Enum.UserInputType.MouseButton1 then return end
-		
-		buttonDown = false
-		movingSlider = false
-	end)
-	
-	
-	uis.InputChanged:Connect(function(input)
-		
-		if input.UserInputType ~= Enum.UserInputType.MouseMovement then return end
-		
-		
-		local mousePos = uis:GetMouseLocation() - Vector2.new(0, game:GetService("GuiService"):GetGuiInset().Y)
-		
-		local centreOfWheel = Vector2.new(colourWheel.AbsolutePosition.X + (colourWheel.AbsoluteSize.X/2), colourWheel.AbsolutePosition.Y + (colourWheel.AbsoluteSize.Y/2))
-		
-		local distanceFromWheel = (mousePos - centreOfWheel).Magnitude
-		
-		
-		if distanceFromWheel <= colourWheel.AbsoluteSize.X/2 and buttonDown then
-			
-			wheelPicker.Position = UDim2.new(0, mousePos.X - colourWheel.AbsolutePosition.X, 0, mousePos.Y - colourWheel.AbsolutePosition.Y)
-	
-			
-		elseif movingSlider then
-			
-			darknessSlider.Position = UDim2.new(darknessSlider.Position.X.Scale, 0, 0, 
-				math.clamp(
-				mousePos.Y - darknessPicker.AbsolutePosition.Y, 
-				0, 
-				darknessPicker.AbsoluteSize.Y)
-			)	
-		end
-		
-		
-		updateColour(centreOfWheel)
-	end)
-end
-coroutine.wrap(HKHUNKQ_fake_script)()
-
 --- NoClip ---
 
 NoClip.MouseButton1Down:connect(function()
 	noclip = not noclip
 	if noclip then
 		NoClip.Text = "NoClip Mode: ON"
-		NoClip.BackgroundColor3 = hsv
+		NoClip.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		NoClip.Text = "NoClip Mode: OFF"
 		NoClip.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1639,7 +1542,7 @@ farmbtsafety.MouseButton1Down:connect(function()
 	farmbtsafetyactive = not farmbtsafetyactive
 	if farmbtsafetyactive then
 		farmbtsafety.Text = "Safety Net: ON"
-		farmbtsafety.BackgroundColor3 = hsv
+		farmbtsafety.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmbtsafety.Text = "Safety Net: OFF"
 		farmbtsafety.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1787,9 +1690,9 @@ FarmAll.MouseButton1Click:Connect(function()
 		farmspeedactive = true
 		farmpsychicactive = true
 		farmjumpactive = true
-		FarmAll.BackgroundColor3 = hsv
+		FarmAll.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmAll.Text = "Farm All: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmallactive = false
 		farmfistactive = false
@@ -1811,9 +1714,9 @@ end)
 FarmFist.MouseButton1Click:Connect(function()
 	if farmfistactive ~= true then
 		farmfistactive = true
-		FarmFist.BackgroundColor3 = hsv
+		FarmFist.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmFist.Text = "Farm Fist Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmfistactive = false
 		FarmFist.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1825,9 +1728,9 @@ end)
 FarmBody.MouseButton1Click:Connect(function()
 	if farmbodyactive ~= true then
 		farmbodyactive = true
-		FarmBody.BackgroundColor3 = hsv
+		FarmBody.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmBody.Text = "Farm Body Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmbodyactive = false
 		FarmBody.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1839,9 +1742,9 @@ end)
 FarmSpeed.MouseButton1Click:Connect(function()
 	if farmspeedactive ~= true then
 		farmspeedactive = true
-		FarmSpeed.BackgroundColor3 = hsv
+		FarmSpeed.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmSpeed.Text = "Farm Speed Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmspeedactive = false
 		FarmSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1853,9 +1756,9 @@ end)
 FarmJump.MouseButton1Click:Connect(function()
 	if farmjumpactive ~= true then
 		farmjumpactive = true
-		FarmJump.BackgroundColor3 = hsv
+		FarmJump.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmJump.Text = "Farm Jump Strength: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmjumpactive = false
 		FarmJump.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1867,9 +1770,9 @@ end)
 FarmPsychic.MouseButton1Click:Connect(function()
 	if farmpsychicactive ~= true then
 		farmpsychicactive = true
-		FarmPsychic.BackgroundColor3 = hsv
+		FarmPsychic.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		FarmPsychic.Text = "Farm Psychic Power: ON"
-		FarmExp.BackgroundColor3 = hsv
+		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmpsychicactive = false
 		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -2007,6 +1910,100 @@ end)
 
 -- GUI to LUA --
 
+local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler 
+	local script = Instance.new('LocalScript', WheelFrame)
+
+	local colourWheel = script.Parent:WaitForChild("ColourWheel")
+	local wheelPicker = colourWheel:WaitForChild("Picker")
+	
+	local darknessPicker = script.Parent:WaitForChild("DarknessPicker")
+	local darknessSlider = darknessPicker:WaitForChild("Slider")
+	
+	local colourDisplay = script.Parent:WaitForChild("ColourDisplay")
+	
+	
+	local uis = game:GetService("UserInputService")
+	
+	
+	local buttonDown = false
+	local movingSlider = false
+	
+	
+	local function updateColour(centreOfWheel)
+		
+		
+		local colourPickerCentre = Vector2.new(
+			colourWheel.Picker.AbsolutePosition.X + (colourWheel.Picker.AbsoluteSize.X/2),
+			colourWheel.Picker.AbsolutePosition.Y + (colourWheel.Picker.AbsoluteSize.Y/2)
+		)
+		local h = (math.pi - math.atan2(colourPickerCentre.Y - centreOfWheel.Y, colourPickerCentre.X - centreOfWheel.X)) / (math.pi * 2)
+		
+		local s = (centreOfWheel - colourPickerCentre).Magnitude / (colourWheel.AbsoluteSize.X/2)
+		
+		local v = math.abs((darknessSlider.AbsolutePosition.Y - darknessPicker.AbsolutePosition.Y) / darknessPicker.AbsoluteSize.Y - 1)
+		
+		
+		local hsv = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
+		
+		
+		colourDisplay.ImageColor3 = hsv
+		darknessPicker.UIGradient.Color = ColorSequence.new{
+			ColorSequenceKeypoint.new(0, hsv), 
+			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
+		}
+	end
+	
+	
+	colourWheel.MouseButton1Down:Connect(function()
+		buttonDown = true
+	end)
+	
+	darknessPicker.MouseButton1Down:Connect(function()
+		movingSlider = true
+	end)
+	
+	
+	uis.InputEnded:Connect(function(input)
+		
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 then return end
+		
+		buttonDown = false
+		movingSlider = false
+	end)
+	
+	
+	uis.InputChanged:Connect(function(input)
+		
+		if input.UserInputType ~= Enum.UserInputType.MouseMovement then return end
+		
+		
+		local mousePos = uis:GetMouseLocation() - Vector2.new(0, game:GetService("GuiService"):GetGuiInset().Y)
+		
+		local centreOfWheel = Vector2.new(colourWheel.AbsolutePosition.X + (colourWheel.AbsoluteSize.X/2), colourWheel.AbsolutePosition.Y + (colourWheel.AbsoluteSize.Y/2))
+		
+		local distanceFromWheel = (mousePos - centreOfWheel).Magnitude
+		
+		
+		if distanceFromWheel <= colourWheel.AbsoluteSize.X/2 and buttonDown then
+			
+			wheelPicker.Position = UDim2.new(0, mousePos.X - colourWheel.AbsolutePosition.X, 0, mousePos.Y - colourWheel.AbsolutePosition.Y)
+	
+			
+		elseif movingSlider then
+			
+			darknessSlider.Position = UDim2.new(darknessSlider.Position.X.Scale, 0, 0, 
+				math.clamp(
+				mousePos.Y - darknessPicker.AbsolutePosition.Y, 
+				0, 
+				darknessPicker.AbsoluteSize.Y)
+			)	
+		end
+		
+		
+		updateColour(centreOfWheel)
+	end)
+end
+coroutine.wrap(HKHUNKQ_fake_script)()
 local function RTHWVVM_fake_script() -- Close2.LocalScript 
 	local script = Instance.new('LocalScript', Close2)
 
@@ -2109,7 +2106,7 @@ end)
 AnnoyStart.MouseButton1Click:Connect(function()
 	if annoyplayeractive ~= true then
 		annoyplayeractive = true
-		AnnoyStart.BackgroundColor3 = hsv
+		AnnoyStart.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		AnnoyStart.Text = "TP Spam Player: ON"
 	else
 		annoyplayeractive = false
@@ -2169,7 +2166,7 @@ end)
 esptrack.MouseButton1Click:connect(function()
 	ESPEnabled = not ESPEnabled
 	if ESPEnabled then
-		esptrack.BackgroundColor3 = hsv
+		esptrack.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		for _, v in next, Plrs:GetPlayers() do
 			if v ~= MyPlr then
 				if CharAddedEvent[v.Name] == nil then
