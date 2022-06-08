@@ -622,8 +622,6 @@ Logo.Position = UDim2.new(0.90842557, 0, 0.932606876, 0)
 Logo.Size = UDim2.new(0.0740709603, 0, 0.088696152, 0)
 Logo.Selected = true
 Logo.Image = "rbxassetid://9846482909"
-WheelFrame.Visible = false
-Top2Frame.Visible = false
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
@@ -2191,6 +2189,8 @@ esptrack.MouseButton1Click:connect(function()
 	end
 end)
 
+WheelFrame.Visible = false
+Top2Frame.Visible = false
 -- Server Player Stats --
 
 PlayerInfo.MouseButton1Click:connect(function()
