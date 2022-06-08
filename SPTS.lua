@@ -1593,12 +1593,12 @@ FarmPsychic.MouseButton1Click:Connect(function()
 	if farmpsychicactive ~= true then
 		farmpsychicactive = true
 		FarmPsychic.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
-		FarmPsychic.Text = "Farm Psychic Strength: ON"
+		FarmPsychic.Text = "Farm Psychic Power: ON"
 		FarmExp.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 	else
 		farmpsychicactive = false
 		FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
-		FarmPsychic.Text = "Farm Psychic Strength: OFF"
+		FarmPsychic.Text = "Farm Psychic Power: OFF"
 		FarmExp.BackgroundColor3 = Color3.new(1, 1, 1)
 	end
 end)
@@ -1611,19 +1611,19 @@ spawn(function()
 				fistarguments = {"+FS6"}
 				farmpsychicactive = false
 				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
-				FarmPsychic.Text = "Farm Psychic Strength: OFF"
+				FarmPsychic.Text = "Farm Psychic Power: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.FistStrength.Value)) >= 100e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1381, 9274, 1647)
 				fistarguments = {"+FS5"}
 				farmpsychicactive = false
 				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
-				FarmPsychic.Text = "Farm Psychic Strength: OFF"
+				FarmPsychic.Text = "Farm Psychic Power: OFF"
 			elseif tonumber(string.format("%.0f", game.Players.LocalPlayer.PrivateStats.FistStrength.Value)) >= 1e09 then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1176, 4789, -2293)
 				fistarguments = {"+FS4"}
 				farmpsychicactive = false
 				FarmPsychic.BackgroundColor3 = Color3.new(1, 1, 1)
-				FarmPsychic.Text = "Farm Psychic Strength: OFF"
+				FarmPsychic.Text = "Farm Psychic Power: OFF"
 			else
 				fistarguments = {"+FS3", "+FS2", "+FS1"}
 			end
