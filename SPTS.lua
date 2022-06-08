@@ -470,7 +470,7 @@ WheelFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WheelFrame.BorderColor3 = Color3.fromRGB(42, 42, 42)
 WheelFrame.Position = UDim2.new(0.307749629, 0, 0.397545993, 0)
 WheelFrame.Size = UDim2.new(0.38803792, 0, 0.294478536, 0)
-WheelFrame.Visible = 1
+WheelFrame.Visible = false
 
 ColourWheel.Name = "ColourWheel"
 ColourWheel.Parent = WheelFrame
