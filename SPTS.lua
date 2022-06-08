@@ -470,7 +470,6 @@ WheelFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WheelFrame.BorderColor3 = Color3.fromRGB(42, 42, 42)
 WheelFrame.Position = UDim2.new(0.307749629, 0, 0.397545993, 0)
 WheelFrame.Size = UDim2.new(0.38803792, 0, 0.294478536, 0)
-WheelFrame.Visible = false
 
 ColourWheel.Name = "ColourWheel"
 ColourWheel.Parent = WheelFrame
@@ -589,7 +588,6 @@ Top2Frame.Active = true
 Top2Frame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 Top2Frame.Position = UDim2.new(0.307749629, 0, 0.360736191, 0)
 Top2Frame.Size = UDim2.new(0.38803792, 0, 0.0355828218, 0)
-Top2Frame.Visible = false
 
 UICorner_2.Parent = Top2Frame
 
@@ -624,6 +622,8 @@ Logo.Position = UDim2.new(0.90842557, 0, 0.932606876, 0)
 Logo.Size = UDim2.new(0.0740709603, 0, 0.088696152, 0)
 Logo.Selected = true
 Logo.Image = "rbxassetid://9846482909"
+WheelFrame.Visible = false
+Top2Frame.Visible = false
 
 ShowLocation.Name = "ShowLocation"
 ShowLocation.Parent = WayPointsFrame
