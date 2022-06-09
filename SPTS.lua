@@ -2161,12 +2161,12 @@ spawn(function()
 					local startpos = player.HumanoidRootPart.CFrame
 					v.Character.Humanoid.Died:connect(function()
 						annoyplayeractive = false
-						AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+						AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
 						AnnoyStart.Text = "TP Spam Player: OFF"
 					end)
 					player.Humanoid.Died:connect(function()
 						annoyplayeractive = false
-						AnnoyStart.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+						AnnoyStart.BackgroundColor3 = Color3.new(1, 1, 1)
 						AnnoyStart.Text = "TP Spam Player: OFF"
 					end)
 					while annoyplayeractive == true do
