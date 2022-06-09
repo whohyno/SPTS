@@ -1955,6 +1955,49 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 		if ESPEnabled then
 			game.CoreGui.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
 		end
+		
+		if noclip then
+			game.CoreGui.MainGUI.MainFrame.ExtrasFrame.NoClip.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if farmbtsafetyactive then
+			game.CoreGui.MainGUI.MainFrame.ExtrasFrame.farmbtsafety.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if farmallactive ~= true then
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmAll.BackgroundColor3 = Color3.fromRGB(R,G,B)
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmExp.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if farmfistactive ~= true then
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmFist.BackgroundColor3 = Color3.fromRGB(R,G,B)
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmExp.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if farmbodyactive ~= true then
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmBody.BackgroundColor3 = Color3.fromRGB(R,G,B)
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmExp.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if farmspeedactive ~= true then
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmSpeed.BackgroundColor3 = Color3.fromRGB(R,G,B)
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmExp.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if farmjumpactive ~= true then
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmJump.BackgroundColor3 = Color3.fromRGB(R,G,B)
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmJump.Text = "Farm Jump Strength: ON"
+		end
+
+		if farmpsychicactive ~= true then
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmPsychic.BackgroundColor3 = Color3.fromRGB(R,G,B)
+			game.CoreGui.MainGUI.MainFrame.FarmExpFrame.FarmExp.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+
+		if annoyplayeractive ~= true then
+			game.CoreGui.MainGUI.MainFrame.ExtrasFrame.AnnoyStart.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
+		
 		darknessPicker.UIGradient.Color = ColorSequence.new{
 			ColorSequenceKeypoint.new(0, hsv), 
 			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
