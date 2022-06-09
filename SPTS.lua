@@ -1984,10 +1984,6 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 			game.CoreGui.MainGUI.MainFrame.ExtrasFrame.AnnoyStart.BackgroundColor3 = Color3.fromRGB(R,G,B)
 		end
 		
-		if deathreturnactive ~= true then
-			game.CoreGui.MainGUI.MainFrame.DeathReturn.BackgroundColor3 = Color3.fromRGB(R,G,B)
-		end
-		
 		darknessPicker.UIGradient.Color = ColorSequence.new{
 			ColorSequenceKeypoint.new(0, hsv), 
 			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
@@ -2083,6 +2079,19 @@ DeathReturn.MouseButton1Click:Connect(function()
 	if deathreturnactive ~= true then
 		deathreturnactive = true
 		DeathReturn.Text = "OnDeath Return: ON"
+			
+spawn(function()
+	while task.wait() do
+		local t = 5; 
+		local hue = tick() % t / t
+		local colorrr = Color3.fromHSV(hue, 1, 1)
+		DeathReturn.BackgroundColor3 = colorrr
+		if deathreturnactive == false then
+			DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
+			break
+		end
+	end
+end)
 	else
 		deathreturnactive = false
 		DeathReturn.BackgroundColor3 = Color3.new(1, 1, 1)
