@@ -456,7 +456,7 @@ FarmExpFrame.BorderColor3 = Color3.new(0, 0, 0)
 FarmExpFrame.BackgroundTransparency = 0.2
 FarmExpFrame.Position = UDim2.new(0, 62.5, 0, 33)
 FarmExpFrame.Size = UDim2.new(0, 210, 0, 165)
-FarmExpFrame.Visible = true
+FarmExpFrame.Visible = false
 
 ColourWheelGui.Name = "ColourWheelGui"
 ColourWheelGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -588,7 +588,7 @@ Top2Frame.Active = true
 Top2Frame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 Top2Frame.Position = UDim2.new(0.307749629, 0, 0.360736191, 0)
 Top2Frame.Size = UDim2.new(0.38803792, 0, 0.0355828218, 0)
-Top2Frame.Visible = false
+Top2Frame.Visible = true
 
 UICorner_2.Parent = Top2Frame
 
