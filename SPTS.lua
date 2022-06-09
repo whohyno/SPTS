@@ -456,7 +456,7 @@ FarmExpFrame.BorderColor3 = Color3.new(0, 0, 0)
 FarmExpFrame.BackgroundTransparency = 0.2
 FarmExpFrame.Position = UDim2.new(0, 62.5, 0, 33)
 FarmExpFrame.Size = UDim2.new(0, 210, 0, 165)
-FarmExpFrame.Visible = false
+FarmExpFrame.Visible = true
 
 ColourWheelGui.Name = "ColourWheelGui"
 ColourWheelGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -469,7 +469,7 @@ WheelFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WheelFrame.BorderColor3 = Color3.fromRGB(42, 42, 42)
 WheelFrame.Position = UDim2.new(0.307749629, 0, 0.397545993, 0)
 WheelFrame.Size = UDim2.new(0.38803792, 0, 0.294478536, 0)
-WheelFrame.Visible = false
+WheelFrame.Visible = true
 
 ColourWheel.Name = "ColourWheel"
 ColourWheel.Parent = WheelFrame
@@ -1936,10 +1936,6 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 		end
 	
 		local R,G,B = convertHSV2RGB(hsv)
-		
-		if R,G,B = "255 255 255" then
-			local R,G,B = "0 255 0"
-		end
 		
 		colourDisplay.ImageColor3 = Color3.fromRGB(R,G,B)
 		if ESPEnabled then
