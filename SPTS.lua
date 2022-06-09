@@ -1952,7 +1952,9 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 		local R,G,B = convertHSV2RGB(hsv)
 		
 		colourDisplay.ImageColor3 = Color3.fromRGB(R,G,B)
-		game.CoreGui.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		if ESPEnabled then
+			game.CoreGui.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		end
 		darknessPicker.UIGradient.Color = ColorSequence.new{
 			ColorSequenceKeypoint.new(0, hsv), 
 			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
