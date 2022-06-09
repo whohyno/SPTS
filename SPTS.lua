@@ -1937,16 +1937,23 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 			colourWheel.Picker.AbsolutePosition.Y + (colourWheel.Picker.AbsoluteSize.Y/2)
 		)
 		local h = (math.pi - math.atan2(colourPickerCentre.Y - centreOfWheel.Y, colourPickerCentre.X - centreOfWheel.X)) / (math.pi * 2)
-		
 		local s = (centreOfWheel - colourPickerCentre).Magnitude / (colourWheel.AbsoluteSize.X/2)
-		
 		local v = math.abs((darknessSlider.AbsolutePosition.Y - darknessPicker.AbsolutePosition.Y) / darknessPicker.AbsoluteSize.Y - 1)
+		local hsv = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))    
+	
+		function convertHSV2RGB(color)
+	
+			local R = math.floor((color.R * 255) + 0.5)
+			local G = math.floor((color.G * 255) + 0.5)
+			local B = math.floor((color.B * 255) + 0.5)
+	
+			return R,G,B
+		end
+	
+		local R,G,B = convertHSV2RGB(hsv)
 		
-		
-		local hsv = Color3.fromHSV(math.clamp(h, 0, 1), math.clamp(s, 0, 1), math.clamp(v, 0, 1))
-		
-		
-		colourDisplay.ImageColor3 = hsv
+		colourDisplay.ImageColor3 = Color3.fromRGB(R,G,B)
+		script.Parent.Parent.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
 		darknessPicker.UIGradient.Color = ColorSequence.new{
 			ColorSequenceKeypoint.new(0, hsv), 
 			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
