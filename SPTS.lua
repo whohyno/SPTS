@@ -1952,7 +1952,7 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 		local R,G,B = convertHSV2RGB(hsv)
 		
 		colourDisplay.ImageColor3 = Color3.fromRGB(R,G,B)
-		script.Parent.Parent.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
+		game.CoreGui.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
 		darknessPicker.UIGradient.Color = ColorSequence.new{
 			ColorSequenceKeypoint.new(0, hsv), 
 			ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
@@ -2172,7 +2172,6 @@ end)
 esptrack.MouseButton1Click:connect(function()
 	ESPEnabled = not ESPEnabled
 	if ESPEnabled then
-		esptrack.BackgroundColor3 = Color3.fromRGB(255, 166, 0)
 		for _, v in next, Plrs:GetPlayers() do
 			if v ~= MyPlr then
 				if CharAddedEvent[v.Name] == nil then
