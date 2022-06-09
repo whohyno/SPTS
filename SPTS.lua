@@ -1937,6 +1937,10 @@ local function HKHUNKQ_fake_script() -- WheelFrame.ColourWheelHandler
 	
 		local R,G,B = convertHSV2RGB(hsv)
 		
+		if R,G,B = "255 255 255" then
+			local R,G,B = "0 255 0"
+		end
+		
 		colourDisplay.ImageColor3 = Color3.fromRGB(R,G,B)
 		if ESPEnabled then
 			game.CoreGui.MainGUI.MainFrame.esptrack.BackgroundColor3 = Color3.fromRGB(R,G,B)
